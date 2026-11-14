@@ -1,0 +1,71 @@
+{
+  "run_at": "2026-11-14T04:20:30+00:00",
+  "pages": 59,
+  "load_errors": [],
+  "load_seconds": 0.55,
+  "embedding": {
+    "provider": "openai",
+    "model": "text-embedding-3-small",
+    "dimensions": 1536
+  },
+  "store": {
+    "backend": "postgresql+pgvector",
+    "table": "chunks",
+    "metric": "cosine",
+    "search": "exact (sequential scan, no ANN index)"
+  },
+  "indexes": {
+    "A": {
+      "chunking": "fixed_size",
+      "size": 500,
+      "overlap": 50,
+      "chunks": {
+        "count": 297,
+        "total_chars": 135841,
+        "min": 64,
+        "p10": 293,
+        "median": 500,
+        "p90": 500,
+        "max": 500,
+        "mean": 457.4
+      },
+      "embedded_this_run": 254,
+      "skipped_unchanged": 43,
+      "written": 254,
+      "deleted_obsolete": 0,
+      "rows_in_store": 297,
+      "tokens_this_run": 59156,
+      "seconds": 3.33
+    },
+    "B": {
+      "chunking": "by_paragraph",
+      "max_size": 1000,
+      "min_size": 250,
+      "chunks": {
+        "count": 194,
+        "total_chars": 123907,
+        "min": 45,
+        "p10": 281,
+        "median": 671.5,
+        "p90": 975,
+        "max": 1032,
+        "mean": 638.7
+      },
+      "embedded_this_run": 163,
+      "skipped_unchanged": 31,
+      "written": 163,
+      "deleted_obsolete": 3,
+      "rows_in_store": 194,
+      "tokens_this_run": 51812,
+      "seconds": 1.6
+    }
+  },
+  "embedding_usage": {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "api_calls": 4,
+    "total_tokens": 110968,
+    "estimated_cost_usd": 0.002219
+  },
+  "total_seconds": 5.71
+}

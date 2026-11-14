@@ -1,4 +1,10 @@
-# Core setup and PDF parsing. Choose and install an embedding SDK separately.
+# Core setup and PDF parsing.
 psycopg[binary]==3.3.8
 pypdf>=5,<7
 python-dotenv>=1,<2
+# OCR of scanned PDFs (Google Cloud Vision REST API).
+pymupdf==2.1
+requests==2.34.2
+# Embeddings: OpenAI text-embedding-3-small.
+openai==2.54.0
+streamlit==1.67.0

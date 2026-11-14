@@ -1,0 +1,77 @@
+{
+  "created_at": "2026-11-14",
+  "rule": "10 trang nội dung cách đều trong danh sách trang đã sắp xếp; vị trí = dòng chứa ký tự giữa trang; chunk = chunk đầu tiên của chiến lược chứa vị trí đó. C dùng chung chunk với B nên nhãn C = nhãn B.",
+  "scale": "0 = bị cắt giữa ý/thiếu chủ thể, không hiểu; 1 = hiểu một phần, thiếu ngữ cảnh; 2 = tự hiểu được và giữ trọn ý",
+  "positions": [
+    {
+      "position_id": "P01",
+      "page": 3,
+      "section": "bc_tinh_hinh_tai_chinh",
+      "char_offset": 1090,
+      "anchor_line": "Dự phòng rủi ro chứng khoán đầu tư | (236.878) | (232.739),"
+    },
+    {
+      "position_id": "P02",
+      "page": 9,
+      "section": "tm_dac_diem_chinh_sach_ke_toan",
+      "char_offset": 906,
+      "anchor_line": "Ông Lê Viết Hải | Thành viên"
+    },
+    {
+      "position_id": "P03",
+      "page": 16,
+      "section": "tm_dac_diem_chinh_sach_ke_toan",
+      "char_offset": 1142,
+      "anchor_line": "khoản nợ và các nghĩa vụ tài chính khác liên quan đến khoản nợ (nếu có) đến thời điểm"
+    },
+    {
+      "position_id": "P04",
+      "page": 22,
+      "section": "tm_dac_diem_chinh_sach_ke_toan",
+      "char_offset": 1130,
+      "anchor_line": "Thu nhập từ tiền cho thuê hoạt động được hạch toán vào Báo cáo kết quả hoạt động hợp nhất"
+    },
+    {
+      "position_id": "P05",
+      "page": 29,
+      "section": "tm_dac_diem_chinh_sach_ke_toan",
+      "char_offset": 834,
+      "anchor_line": "cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể (bộ phận chia theo vùng địa"
+    },
+    {
+      "position_id": "P06",
+      "page": 35,
+      "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+      "char_offset": 744,
+      "anchor_line": "Chứng khoán nợ do Chính phủ bảo lãnh | (3 i) | 21.975.806 | 22.204.008"
+    },
+    {
+      "position_id": "P07",
+      "page": 42,
+      "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+      "char_offset": 733,
+      "anchor_line": "Các khoản khác | 3.534.006 | 4.416.084"
+    },
+    {
+      "position_id": "P08",
+      "page": 48,
+      "section": "tm_bo_sung_ket_qua_hoat_dong",
+      "char_offset": 822,
+      "anchor_line": "Lợi nhuận sau thuế hợp nhất của MB quý III năm 2026 so với quý III năm 2025 tăng 2.451.448"
+    },
+    {
+      "position_id": "P09",
+      "page": 55,
+      "section": "tm_thong_tin_khac",
+      "char_offset": 2023,
+      "anchor_line": "dụng để quản lý rủi ro thanh khoản. Ngân hàng thưởng tiến hành đánh giá chênh lệch lãi suất,"
+    },
+    {
+      "position_id": "P10",
+      "page": 61,
+      "section": "tm_thong_tin_khac",
+      "char_offset": 342,
+      "anchor_line": "SEK | 2.651,49 | 2.879,53"
+    }
+  ]
+}

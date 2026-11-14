@@ -1,0 +1,503 @@
+{
+  "source": "data/raw_mbb/MBB_Baocaotaichinh_Q3_2026_Hopnhat.pdf",
+  "engine": "Google Cloud Vision API v1 images:annotate DOCUMENT_TEXT_DETECTION",
+  "language_hints": [
+    "vi"
+  ],
+  "dpi": 300,
+  "run_at": "2026-11-14T03:27:24+00:00",
+  "physical_pages": 61,
+  "api_calls_this_run": 5,
+  "low_confidence_threshold": 0.8,
+  "pages": [
+    {
+      "page": 1,
+      "chars": 2151,
+      "word_count": 456,
+      "mean_confidence": 0.9552,
+      "low_confidence_words": 25,
+      "empty": false
+    },
+    {
+      "page": 2,
+      "chars": 768,
+      "word_count": 178,
+      "mean_confidence": 0.9498,
+      "low_confidence_words": 13,
+      "empty": false
+    },
+    {
+      "page": 3,
+      "chars": 2096,
+      "word_count": 427,
+      "mean_confidence": 0.9538,
+      "low_confidence_words": 33,
+      "empty": false
+    },
+    {
+      "page": 4,
+      "chars": 1412,
+      "word_count": 265,
+      "mean_confidence": 0.9628,
+      "low_confidence_words": 15,
+      "empty": false
+    },
+    {
+      "page": 5,
+      "chars": 1085,
+      "word_count": 222,
+      "mean_confidence": 0.9625,
+      "low_confidence_words": 9,
+      "empty": false
+    },
+    {
+      "page": 6,
+      "chars": 2283,
+      "word_count": 453,
+      "mean_confidence": 0.973,
+      "low_confidence_words": 9,
+      "empty": false
+    },
+    {
+      "page": 7,
+      "chars": 2741,
+      "word_count": 647,
+      "mean_confidence": 0.9741,
+      "low_confidence_words": 13,
+      "empty": false
+    },
+    {
+      "page": 8,
+      "chars": 1301,
+      "word_count": 280,
+      "mean_confidence": 0.9743,
+      "low_confidence_words": 8,
+      "empty": false
+    },
+    {
+      "page": 9,
+      "chars": 1839,
+      "word_count": 433,
+      "mean_confidence": 0.9785,
+      "low_confidence_words": 7,
+      "empty": false
+    },
+    {
+      "page": 10,
+      "chars": 2936,
+      "word_count": 728,
+      "mean_confidence": 0.9793,
+      "low_confidence_words": 14,
+      "empty": false
+    },
+    {
+      "page": 11,
+      "chars": 2647,
+      "word_count": 675,
+      "mean_confidence": 0.9827,
+      "low_confidence_words": 10,
+      "empty": false
+    },
+    {
+      "page": 12,
+      "chars": 3099,
+      "word_count": 738,
+      "mean_confidence": 0.9896,
+      "low_confidence_words": 3,
+      "empty": false
+    },
+    {
+      "page": 13,
+      "chars": 2532,
+      "word_count": 625,
+      "mean_confidence": 0.9891,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 14,
+      "chars": 2501,
+      "word_count": 671,
+      "mean_confidence": 0.986,
+      "low_confidence_words": 4,
+      "empty": false
+    },
+    {
+      "page": 15,
+      "chars": 2656,
+      "word_count": 668,
+      "mean_confidence": 0.9843,
+      "low_confidence_words": 7,
+      "empty": false
+    },
+    {
+      "page": 16,
+      "chars": 2285,
+      "word_count": 580,
+      "mean_confidence": 0.9868,
+      "low_confidence_words": 3,
+      "empty": false
+    },
+    {
+      "page": 17,
+      "chars": 3553,
+      "word_count": 820,
+      "mean_confidence": 0.987,
+      "low_confidence_words": 6,
+      "empty": false
+    },
+    {
+      "page": 18,
+      "chars": 3893,
+      "word_count": 889,
+      "mean_confidence": 0.99,
+      "low_confidence_words": 3,
+      "empty": false
+    },
+    {
+      "page": 19,
+      "chars": 1907,
+      "word_count": 463,
+      "mean_confidence": 0.9879,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 20,
+      "chars": 2030,
+      "word_count": 481,
+      "mean_confidence": 0.9903,
+      "low_confidence_words": 0,
+      "empty": false
+    },
+    {
+      "page": 21,
+      "chars": 3589,
+      "word_count": 848,
+      "mean_confidence": 0.9902,
+      "low_confidence_words": 0,
+      "empty": false
+    },
+    {
+      "page": 22,
+      "chars": 2261,
+      "word_count": 529,
+      "mean_confidence": 0.9892,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 23,
+      "chars": 3377,
+      "word_count": 812,
+      "mean_confidence": 0.9875,
+      "low_confidence_words": 6,
+      "empty": false
+    },
+    {
+      "page": 24,
+      "chars": 3290,
+      "word_count": 783,
+      "mean_confidence": 0.9881,
+      "low_confidence_words": 3,
+      "empty": false
+    },
+    {
+      "page": 25,
+      "chars": 2116,
+      "word_count": 529,
+      "mean_confidence": 0.9835,
+      "low_confidence_words": 6,
+      "empty": false
+    },
+    {
+      "page": 26,
+      "chars": 2988,
+      "word_count": 700,
+      "mean_confidence": 0.9904,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 27,
+      "chars": 3326,
+      "word_count": 768,
+      "mean_confidence": 0.9887,
+      "low_confidence_words": 2,
+      "empty": false
+    },
+    {
+      "page": 28,
+      "chars": 3514,
+      "word_count": 826,
+      "mean_confidence": 0.9898,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 29,
+      "chars": 1667,
+      "word_count": 404,
+      "mean_confidence": 0.9879,
+      "low_confidence_words": 5,
+      "empty": false
+    },
+    {
+      "page": 30,
+      "chars": 1100,
+      "word_count": 194,
+      "mean_confidence": 0.9844,
+      "low_confidence_words": 2,
+      "empty": false
+    },
+    {
+      "page": 31,
+      "chars": 1631,
+      "word_count": 279,
+      "mean_confidence": 0.9806,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 32,
+      "chars": 1437,
+      "word_count": 262,
+      "mean_confidence": 0.9838,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 33,
+      "chars": 1690,
+      "word_count": 319,
+      "mean_confidence": 0.9811,
+      "low_confidence_words": 0,
+      "empty": false
+    },
+    {
+      "page": 34,
+      "chars": 1615,
+      "word_count": 331,
+      "mean_confidence": 0.9745,
+      "low_confidence_words": 4,
+      "empty": false
+    },
+    {
+      "page": 35,
+      "chars": 1422,
+      "word_count": 319,
+      "mean_confidence": 0.9761,
+      "low_confidence_words": 5,
+      "empty": false
+    },
+    {
+      "page": 36,
+      "chars": 1269,
+      "word_count": 293,
+      "mean_confidence": 0.9835,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 37,
+      "chars": 1023,
+      "word_count": 224,
+      "mean_confidence": 0.9818,
+      "low_confidence_words": 0,
+      "empty": false
+    },
+    {
+      "page": 38,
+      "chars": 1144,
+      "word_count": 236,
+      "mean_confidence": 0.9815,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 39,
+      "chars": 806,
+      "word_count": 175,
+      "mean_confidence": 0.98,
+      "low_confidence_words": 2,
+      "empty": false
+    },
+    {
+      "page": 40,
+      "chars": 864,
+      "word_count": 187,
+      "mean_confidence": 0.9793,
+      "low_confidence_words": 2,
+      "empty": false
+    },
+    {
+      "page": 41,
+      "chars": 1125,
+      "word_count": 262,
+      "mean_confidence": 0.9798,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 42,
+      "chars": 1360,
+      "word_count": 235,
+      "mean_confidence": 0.9774,
+      "low_confidence_words": 3,
+      "empty": false
+    },
+    {
+      "page": 43,
+      "chars": 1549,
+      "word_count": 307,
+      "mean_confidence": 0.9862,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 44,
+      "chars": 1544,
+      "word_count": 293,
+      "mean_confidence": 0.9813,
+      "low_confidence_words": 4,
+      "empty": false
+    },
+    {
+      "page": 45,
+      "chars": 756,
+      "word_count": 142,
+      "mean_confidence": 0.9823,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 46,
+      "chars": 1890,
+      "word_count": 403,
+      "mean_confidence": 0.9843,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 47,
+      "chars": 1658,
+      "word_count": 353,
+      "mean_confidence": 0.9795,
+      "low_confidence_words": 4,
+      "empty": false
+    },
+    {
+      "page": 48,
+      "chars": 1569,
+      "word_count": 332,
+      "mean_confidence": 0.9859,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 49,
+      "chars": 778,
+      "word_count": 173,
+      "mean_confidence": 0.9499,
+      "low_confidence_words": 12,
+      "empty": false
+    },
+    {
+      "page": 50,
+      "chars": 1813,
+      "word_count": 386,
+      "mean_confidence": 0.971,
+      "low_confidence_words": 13,
+      "empty": false
+    },
+    {
+      "page": 51,
+      "chars": 2474,
+      "word_count": 542,
+      "mean_confidence": 0.9884,
+      "low_confidence_words": 2,
+      "empty": false
+    },
+    {
+      "page": 52,
+      "chars": 2368,
+      "word_count": 563,
+      "mean_confidence": 0.9826,
+      "low_confidence_words": 5,
+      "empty": false
+    },
+    {
+      "page": 53,
+      "chars": 1304,
+      "word_count": 206,
+      "mean_confidence": 0.9834,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 54,
+      "chars": 1340,
+      "word_count": 216,
+      "mean_confidence": 0.9841,
+      "low_confidence_words": 0,
+      "empty": false
+    },
+    {
+      "page": 55,
+      "chars": 4045,
+      "word_count": 959,
+      "mean_confidence": 0.9902,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 56,
+      "chars": 2373,
+      "word_count": 566,
+      "mean_confidence": 0.9901,
+      "low_confidence_words": 0,
+      "empty": false
+    },
+    {
+      "page": 57,
+      "chars": 1935,
+      "word_count": 346,
+      "mean_confidence": 0.9777,
+      "low_confidence_words": 7,
+      "empty": false
+    },
+    {
+      "page": 58,
+      "chars": 2097,
+      "word_count": 436,
+      "mean_confidence": 0.9886,
+      "low_confidence_words": 0,
+      "empty": false
+    },
+    {
+      "page": 59,
+      "chars": 2992,
+      "word_count": 718,
+      "mean_confidence": 0.9903,
+      "low_confidence_words": 1,
+      "empty": false
+    },
+    {
+      "page": 60,
+      "chars": 1860,
+      "word_count": 329,
+      "mean_confidence": 0.9759,
+      "low_confidence_words": 5,
+      "empty": false
+    },
+    {
+      "page": 61,
+      "chars": 624,
+      "word_count": 120,
+      "mean_confidence": 0.9566,
+      "low_confidence_words": 6,
+      "empty": false
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,528 @@
+{
+  "manifest_version": 1,
+  "counting_rule": "Đếm trang vật lý của PDF (1-based). Loại trang công văn/cam kết công bố thông tin không thuộc nội dung báo cáo. Mọi trang còn lại đều có văn bản sau OCR + chuẩn hóa (chars > 0). 'pages' và 'total_chars' do starter/scripts/build_manifest.py tính lại, không sửa tay.",
+  "sources": [
+    {
+      "source_id": "mbb-bctc-hn-q3-2026",
+      "title": "Báo cáo tài chính hợp nhất Quý III/2026 - Ngân hàng TMCP Quân đội (MB)",
+      "publisher": "Ngân hàng TMCP Quân đội (MB), mã chứng khoán MBB (HOSE)",
+      "source_path_or_url": "https://static2.vietstock.vn/data/HOSE/2026/BCTC/VN/QUY%203/MBB_Baocaotaichinh_Q3_2026_Hopnhat.pdf",
+      "local_path": "starter/data/raw_mbb/MBB_Baocaotaichinh_Q3_2026_Hopnhat.pdf",
+      "license_or_permission": "Báo cáo tài chính công bố thông tin của công ty niêm yết, truy cập công khai trên Vietstock. Không tìm thấy giấy phép tái phân phối rõ ràng: chỉ dùng cho mục đích học tập, không commit bản PDF gốc (tải lại từ URL và kiểm tra sha256).",
+      "accessed_at": "2026-11-14",
+      "snapshot": {
+        "sha256": "bd5b2bad6c4c0669f16e9673c9a076d100fa6eb51bc7085bf66db89053d618ce",
+        "bytes": 3862536,
+        "pdf_creator": "Hewlett-Packard MFP (bản scan)",
+        "pdf_creation_date": "2026-10-21T10:59:00+07:00",
+        "pdf_mod_date": "2026-10-30T16:22:10+07:00"
+      },
+      "language": "vi",
+      "report_period": "Q3/2026",
+      "report_type": "hop_nhat",
+      "extraction": {
+        "method": "ocr",
+        "ocr_dir": "starter/data/ocr/mbb_q3_2026",
+        "engine": "Google Cloud Vision API v1 images:annotate DOCUMENT_TEXT_DETECTION, languageHints=[vi]",
+        "dpi": 300,
+        "log": "starter/data/ocr/mbb_q3_2026/ocr_log.json",
+        "text_layout": "rows",
+        "layout_note": "Text dựng lại theo hàng từ toạ độ từng từ của Vision (starter/src/layout.py): xoay theo góc nghiêng trung vị, gom từ có tâm dọc lệch <= 0,6 x chiều cao từ trung vị thành một hàng, khoảng trống ngang > 1,6 x chiều cao từ trung vị thành ' | '. Không gọi lại API."
+      },
+      "physical_pages": 61,
+      "excluded_pages": [
+        {
+          "page": 1,
+          "reason": "Công văn số 1470/MB-HĐQT về việc công bố thông tin BCTC, chữ ký số; không phải nội dung báo cáo"
+        },
+        {
+          "page": 2,
+          "reason": "Phần cuối công văn: cam kết thông tin công bố là đúng sự thật; không phải nội dung báo cáo"
+        }
+      ],
+      "sections": [
+        {
+          "id": "bc_tinh_hinh_tai_chinh",
+          "title": "Báo cáo tình hình tài chính hợp nhất",
+          "pages": [
+            3,
+            5
+          ]
+        },
+        {
+          "id": "bc_ket_qua_hoat_dong",
+          "title": "Báo cáo kết quả hoạt động hợp nhất",
+          "pages": [
+            6,
+            6
+          ]
+        },
+        {
+          "id": "bc_luu_chuyen_tien_te",
+          "title": "Báo cáo lưu chuyển tiền tệ hợp nhất",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "tm_dac_diem_chinh_sach_ke_toan",
+          "title": "Thuyết minh: đặc điểm hoạt động, chuẩn mực và chính sách kế toán",
+          "pages": [
+            9,
+            29
+          ]
+        },
+        {
+          "id": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "title": "Thuyết minh III: thông tin bổ sung cho Báo cáo tình hình tài chính",
+          "pages": [
+            30,
+            45
+          ]
+        },
+        {
+          "id": "tm_bo_sung_ket_qua_hoat_dong",
+          "title": "Thuyết minh IV: thông tin bổ sung cho Báo cáo kết quả hoạt động",
+          "pages": [
+            46,
+            50
+          ]
+        },
+        {
+          "id": "tm_thong_tin_khac",
+          "title": "Thuyết minh V: các thông tin khác (cam kết, bên liên quan, bộ phận, quản lý rủi ro)",
+          "pages": [
+            51,
+            61
+          ]
+        }
+      ],
+      "section_notes": "Ranh giới lấy theo tiêu đề in trong tài liệu: 'BÁO CÁO TÌNH HÌNH TÀI CHÍNH HỢP NHẤT' (tr.3), 'BÁO CÁO KẾT QUẢ HOẠT ĐỘNG HỢP NHẤT' (tr.6), 'BÁO CÁO LƯU CHUYỂN TIỀN TỆ HỢP NHẤT' (tr.7), 'THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT' (tr.9), 'III- THÔNG TIN BỔ SUNG...' (tr.30), 'IV- Thông tin bổ sung...' (tr.46), 'V- CÁC THÔNG TIN KHÁC' (tr.51). Gán theo trang: trang 11 vừa có cuối phần đặc điểm hoạt động vừa có đầu phần chuẩn mực kế toán, nên hai phần này gộp thành một section.",
+      "known_issues": [
+        "Bảng: đã dựng lại hàng-cột từ toạ độ (text_layout=rows); nhãn chỉ tiêu nằm cùng hàng với số. Nhãn xuống 2 dòng chỉ gắn số vào dòng cuối; ô gộp/tiêu đề nhiều tầng có thể lệch cột.",
+        "Lỗi OCR quan sát được: 'Quý Hil/2026' (Quý III), 'TÔNG LỢI NHUẬN', 'LƯU CHUYÊN', 'bản nợ' (bán nợ), 'Biển động', 'dự phỏng'.",
+        "Tr.9: bản gốc in 'QUÝ III/2026' (chữ nghiêng), OCR đọc nhầm thành 'QUÝ II/2026' (đã đối chiếu ảnh scan 2026-11-14).",
+        "Tr.61 gồm bảng tỷ giá và khối chữ ký; vẫn tính vì có nội dung thuyết minh (mục 6).",
+        "Tr.11: bản gốc in '18.675' nhân viên (chữ đậm), OCR đọc thành '18,675'."
+      ],
+      "pages": [
+        {
+          "page": 3,
+          "page_id": "mbb-bctc-hn-q3-2026:p003",
+          "section": "bc_tinh_hinh_tai_chinh",
+          "chars": 2180,
+          "ocr_mean_confidence": 0.9538
+        },
+        {
+          "page": 4,
+          "page_id": "mbb-bctc-hn-q3-2026:p004",
+          "section": "bc_tinh_hinh_tai_chinh",
+          "chars": 1418,
+          "ocr_mean_confidence": 0.9628
+        },
+        {
+          "page": 5,
+          "page_id": "mbb-bctc-hn-q3-2026:p005",
+          "section": "bc_tinh_hinh_tai_chinh",
+          "chars": 1049,
+          "ocr_mean_confidence": 0.9625
+        },
+        {
+          "page": 6,
+          "page_id": "mbb-bctc-hn-q3-2026:p006",
+          "section": "bc_ket_qua_hoat_dong",
+          "chars": 2412,
+          "ocr_mean_confidence": 0.973
+        },
+        {
+          "page": 7,
+          "page_id": "mbb-bctc-hn-q3-2026:p007",
+          "section": "bc_luu_chuyen_tien_te",
+          "chars": 2771,
+          "ocr_mean_confidence": 0.9741
+        },
+        {
+          "page": 8,
+          "page_id": "mbb-bctc-hn-q3-2026:p008",
+          "section": "bc_luu_chuyen_tien_te",
+          "chars": 1257,
+          "ocr_mean_confidence": 0.9743
+        },
+        {
+          "page": 9,
+          "page_id": "mbb-bctc-hn-q3-2026:p009",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 1813,
+          "ocr_mean_confidence": 0.9785
+        },
+        {
+          "page": 10,
+          "page_id": "mbb-bctc-hn-q3-2026:p010",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3026,
+          "ocr_mean_confidence": 0.9793
+        },
+        {
+          "page": 11,
+          "page_id": "mbb-bctc-hn-q3-2026:p011",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2653,
+          "ocr_mean_confidence": 0.9827
+        },
+        {
+          "page": 12,
+          "page_id": "mbb-bctc-hn-q3-2026:p012",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3109,
+          "ocr_mean_confidence": 0.9896
+        },
+        {
+          "page": 13,
+          "page_id": "mbb-bctc-hn-q3-2026:p013",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2536,
+          "ocr_mean_confidence": 0.9891
+        },
+        {
+          "page": 14,
+          "page_id": "mbb-bctc-hn-q3-2026:p014",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2527,
+          "ocr_mean_confidence": 0.986
+        },
+        {
+          "page": 15,
+          "page_id": "mbb-bctc-hn-q3-2026:p015",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2668,
+          "ocr_mean_confidence": 0.9843
+        },
+        {
+          "page": 16,
+          "page_id": "mbb-bctc-hn-q3-2026:p016",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2285,
+          "ocr_mean_confidence": 0.9868
+        },
+        {
+          "page": 17,
+          "page_id": "mbb-bctc-hn-q3-2026:p017",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3553,
+          "ocr_mean_confidence": 0.987
+        },
+        {
+          "page": 18,
+          "page_id": "mbb-bctc-hn-q3-2026:p018",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3893,
+          "ocr_mean_confidence": 0.99
+        },
+        {
+          "page": 19,
+          "page_id": "mbb-bctc-hn-q3-2026:p019",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 1907,
+          "ocr_mean_confidence": 0.9879
+        },
+        {
+          "page": 20,
+          "page_id": "mbb-bctc-hn-q3-2026:p020",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2044,
+          "ocr_mean_confidence": 0.9903
+        },
+        {
+          "page": 21,
+          "page_id": "mbb-bctc-hn-q3-2026:p021",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3599,
+          "ocr_mean_confidence": 0.9902
+        },
+        {
+          "page": 22,
+          "page_id": "mbb-bctc-hn-q3-2026:p022",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2261,
+          "ocr_mean_confidence": 0.9892
+        },
+        {
+          "page": 23,
+          "page_id": "mbb-bctc-hn-q3-2026:p023",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3377,
+          "ocr_mean_confidence": 0.9875
+        },
+        {
+          "page": 24,
+          "page_id": "mbb-bctc-hn-q3-2026:p024",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3294,
+          "ocr_mean_confidence": 0.9881
+        },
+        {
+          "page": 25,
+          "page_id": "mbb-bctc-hn-q3-2026:p025",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2116,
+          "ocr_mean_confidence": 0.9835
+        },
+        {
+          "page": 26,
+          "page_id": "mbb-bctc-hn-q3-2026:p026",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 2988,
+          "ocr_mean_confidence": 0.9904
+        },
+        {
+          "page": 27,
+          "page_id": "mbb-bctc-hn-q3-2026:p027",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3326,
+          "ocr_mean_confidence": 0.9887
+        },
+        {
+          "page": 28,
+          "page_id": "mbb-bctc-hn-q3-2026:p028",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 3518,
+          "ocr_mean_confidence": 0.9898
+        },
+        {
+          "page": 29,
+          "page_id": "mbb-bctc-hn-q3-2026:p029",
+          "section": "tm_dac_diem_chinh_sach_ke_toan",
+          "chars": 1669,
+          "ocr_mean_confidence": 0.9879
+        },
+        {
+          "page": 30,
+          "page_id": "mbb-bctc-hn-q3-2026:p030",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1192,
+          "ocr_mean_confidence": 0.9844
+        },
+        {
+          "page": 31,
+          "page_id": "mbb-bctc-hn-q3-2026:p031",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1749,
+          "ocr_mean_confidence": 0.9806
+        },
+        {
+          "page": 32,
+          "page_id": "mbb-bctc-hn-q3-2026:p032",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1605,
+          "ocr_mean_confidence": 0.9838
+        },
+        {
+          "page": 33,
+          "page_id": "mbb-bctc-hn-q3-2026:p033",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1864,
+          "ocr_mean_confidence": 0.9811
+        },
+        {
+          "page": 34,
+          "page_id": "mbb-bctc-hn-q3-2026:p034",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1837,
+          "ocr_mean_confidence": 0.9745
+        },
+        {
+          "page": 35,
+          "page_id": "mbb-bctc-hn-q3-2026:p035",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1488,
+          "ocr_mean_confidence": 0.9761
+        },
+        {
+          "page": 36,
+          "page_id": "mbb-bctc-hn-q3-2026:p036",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1331,
+          "ocr_mean_confidence": 0.9835
+        },
+        {
+          "page": 37,
+          "page_id": "mbb-bctc-hn-q3-2026:p037",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1157,
+          "ocr_mean_confidence": 0.9818
+        },
+        {
+          "page": 38,
+          "page_id": "mbb-bctc-hn-q3-2026:p038",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1306,
+          "ocr_mean_confidence": 0.9815
+        },
+        {
+          "page": 39,
+          "page_id": "mbb-bctc-hn-q3-2026:p039",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 896,
+          "ocr_mean_confidence": 0.98
+        },
+        {
+          "page": 40,
+          "page_id": "mbb-bctc-hn-q3-2026:p040",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 964,
+          "ocr_mean_confidence": 0.9793
+        },
+        {
+          "page": 41,
+          "page_id": "mbb-bctc-hn-q3-2026:p041",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1247,
+          "ocr_mean_confidence": 0.9798
+        },
+        {
+          "page": 42,
+          "page_id": "mbb-bctc-hn-q3-2026:p042",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1466,
+          "ocr_mean_confidence": 0.9774
+        },
+        {
+          "page": 43,
+          "page_id": "mbb-bctc-hn-q3-2026:p043",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1655,
+          "ocr_mean_confidence": 0.9862
+        },
+        {
+          "page": 44,
+          "page_id": "mbb-bctc-hn-q3-2026:p044",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 1660,
+          "ocr_mean_confidence": 0.9813
+        },
+        {
+          "page": 45,
+          "page_id": "mbb-bctc-hn-q3-2026:p045",
+          "section": "tm_bo_sung_tinh_hinh_tai_chinh",
+          "chars": 792,
+          "ocr_mean_confidence": 0.9823
+        },
+        {
+          "page": 46,
+          "page_id": "mbb-bctc-hn-q3-2026:p046",
+          "section": "tm_bo_sung_ket_qua_hoat_dong",
+          "chars": 2018,
+          "ocr_mean_confidence": 0.9843
+        },
+        {
+          "page": 47,
+          "page_id": "mbb-bctc-hn-q3-2026:p047",
+          "section": "tm_bo_sung_ket_qua_hoat_dong",
+          "chars": 1754,
+          "ocr_mean_confidence": 0.9795
+        },
+        {
+          "page": 48,
+          "page_id": "mbb-bctc-hn-q3-2026:p048",
+          "section": "tm_bo_sung_ket_qua_hoat_dong",
+          "chars": 1645,
+          "ocr_mean_confidence": 0.9859
+        },
+        {
+          "page": 49,
+          "page_id": "mbb-bctc-hn-q3-2026:p049",
+          "section": "tm_bo_sung_ket_qua_hoat_dong",
+          "chars": 840,
+          "ocr_mean_confidence": 0.9499
+        },
+        {
+          "page": 50,
+          "page_id": "mbb-bctc-hn-q3-2026:p050",
+          "section": "tm_bo_sung_ket_qua_hoat_dong",
+          "chars": 1903,
+          "ocr_mean_confidence": 0.971
+        },
+        {
+          "page": 51,
+          "page_id": "mbb-bctc-hn-q3-2026:p051",
+          "section": "tm_thong_tin_khac",
+          "chars": 2518,
+          "ocr_mean_confidence": 0.9884
+        },
+        {
+          "page": 52,
+          "page_id": "mbb-bctc-hn-q3-2026:p052",
+          "section": "tm_thong_tin_khac",
+          "chars": 2406,
+          "ocr_mean_confidence": 0.9826
+        },
+        {
+          "page": 53,
+          "page_id": "mbb-bctc-hn-q3-2026:p053",
+          "section": "tm_thong_tin_khac",
+          "chars": 1480,
+          "ocr_mean_confidence": 0.9834
+        },
+        {
+          "page": 54,
+          "page_id": "mbb-bctc-hn-q3-2026:p054",
+          "section": "tm_thong_tin_khac",
+          "chars": 1532,
+          "ocr_mean_confidence": 0.9841
+        },
+        {
+          "page": 55,
+          "page_id": "mbb-bctc-hn-q3-2026:p055",
+          "section": "tm_thong_tin_khac",
+          "chars": 4047,
+          "ocr_mean_confidence": 0.9902
+        },
+        {
+          "page": 56,
+          "page_id": "mbb-bctc-hn-q3-2026:p056",
+          "section": "tm_thong_tin_khac",
+          "chars": 2373,
+          "ocr_mean_confidence": 0.9901
+        },
+        {
+          "page": 57,
+          "page_id": "mbb-bctc-hn-q3-2026:p057",
+          "section": "tm_thong_tin_khac",
+          "chars": 2109,
+          "ocr_mean_confidence": 0.9777
+        },
+        {
+          "page": 58,
+          "page_id": "mbb-bctc-hn-q3-2026:p058",
+          "section": "tm_thong_tin_khac",
+          "chars": 2229,
+          "ocr_mean_confidence": 0.9886
+        },
+        {
+          "page": 59,
+          "page_id": "mbb-bctc-hn-q3-2026:p059",
+          "section": "tm_thong_tin_khac",
+          "chars": 2992,
+          "ocr_mean_confidence": 0.9903
+        },
+        {
+          "page": 60,
+          "page_id": "mbb-bctc-hn-q3-2026:p060",
+          "section": "tm_thong_tin_khac",
+          "chars": 2054,
+          "ocr_mean_confidence": 0.9759
+        },
+        {
+          "page": 61,
+          "page_id": "mbb-bctc-hn-q3-2026:p061",
+          "section": "tm_thong_tin_khac",
+          "chars": 684,
+          "ocr_mean_confidence": 0.9566
+        }
+      ],
+      "counted_content_pages": 59,
+      "total_chars": 124042
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "version": "1.0",
+    "created_at": "2026-11-14",
+    "status": "FROZEN 2026-11-14 - không sửa câu test sau mốc này.",
+    "authoring": "Bản nháp do AI (Claude Code) soạn từ text OCR đã chuẩn hóa; chưa chạy truy xuất nào khi soạn. Học viên kiểm chứng và chịu trách nhiệm nhãn.",
+    "corpus": "data/manifest.json (mbb-bctc-hn-q3-2026, 59 trang nội dung)",
+    "split_rule": "Chia theo chủ đề trước khi chạy: 16 dev / 6 test. Test lấy các chủ đề không có câu dev tương ứng (BHXH, lợi thế thương mại, mua nợ, quỹ công ty bảo hiểm, thuế suất TNDN, ký quỹ).",
+    "leakage_risks": [
+      "t03 (mua nợ, tr.16) gần d12 (bán nợ, tr.17): cùng mục 10-11 chính sách mua bán nợ.",
+      "d15 và d06 cùng nói về dự phòng chung (tr.15 và tr.12): cố ý dùng làm câu gây nhiễu, cả hai đều ở dev."
+    ],
+    "filter_policy": "Trường filter là input giả định người dùng cung cấp trước khi truy xuất (ví dụ người dùng đang đọc một phần cụ thể của báo cáo). Chiến lược A và B bỏ qua filter; C áp dụng filter cho câu có filter và chạy không filter cho câu còn lại.",
+    "allowed_filter_fields": [
+      "section"
+    ],
+    "hit_definition": "Một chunk là hit khi document_id = gold_source_id, page thuộc gold_pages và chunk chứa TRỌN evidence_quote sau khi chuẩn hóa (NFC, gộp mọi khoảng trắng/xuống dòng thành 1 dấu cách, không phân biệt hoa thường). Hit@1: chunk top-1 là hit. Evidence Hit@3: có ít nhất một hit trong top-3.",
+    "evidence_note": "evidence_quote chép NGUYÊN VĂN text OCR (kể cả lỗi OCR) để so khớp; xuống dòng trong OCR được thay bằng dấu cách. Trang bảng dùng text đã dựng lại theo hàng, các cột ngăn bởi ' | '.",
+    "selection_criterion": "Chốt trước khi xem test: chọn chiến lược có Evidence Hit@3 cao nhất trên dev; hòa thì xét Hit@1 dev; tiếp theo grounding thủ công; cuối cùng ít chunk/token hơn.",
+    "verification": "2026-11-14: AI (Claude Code) đối chiếu 22/22 evidence với ảnh scan gốc (vùng cắt quanh evidence, 150 dpi): evidence và đáp án khớp bản gốc; d04 có lỗi OCR số (18.675 -> 18,675); d10 xác nhận 5% thuộc nhóm 2; d14 bổ sung điều kiện 'ghi nhận khi thực thu' vào đáp án. Học viên xác nhận: đã xem kết quả đối chiếu và đồng ý chốt (2026-11-14).",
+    "strategy_decision": {
+      "decided_at": "2026-11-14, sau khi chạy dev, TRƯỚC khi chạy test",
+      "dev_result": "A Hit@3 9/16, Hit@1 6/16; B Hit@3 12/16, Hit@1 7/16; C Hit@3 12/16, Hit@1 7/16",
+      "tie_break_rule_added": "Tiêu chí gốc (Hit@3 dev -> Hit@1 dev -> grounding -> tài nguyên) không phân xử được B/C vì grounding chỉ chấm trên test. Bổ sung trước khi xem test: khi hoà, ưu tiên cấu hình tôn trọng phạm vi filter người dùng cung cấp nếu không tốn thêm tài nguyên.",
+      "chosen": "C",
+      "reason": "C dùng cùng chunk/vector với B (cùng tài nguyên), cho kết quả giống B khi câu hỏi không có filter, và giới hạn top-3 trong section được yêu cầu (tuân thủ filter dev 2/2). Mẫu filter dev chỉ 2 câu nên lợi ích của filter chưa được chứng minh bằng Hit@3.",
+      "decided_by": "học viên (AI đề xuất phương án)"
+    }
+  },
+  "questions": [
+    {
+      "id": "d01",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Giấy phép hoạt động của MB có thời hạn bao lâu và tính từ ngày nào?",
+      "expected_answer": "99 năm kể từ ngày 14/9/1994.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        9
+      ],
+      "evidence_quote": "có thời hạn là 99 năm kể từ ngày 14/9/1994.",
+      "filter": null
+    },
+    {
+      "id": "d02",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Mạng lưới của MB gồm bao nhiêu chi nhánh và phòng giao dịch?",
+      "expected_answer": "1 Hội sở chính, 129 chi nhánh (trong đó 1 chi nhánh nước ngoài) và 238 phòng giao dịch.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        10
+      ],
+      "evidence_quote": "Số chi nhánh: 1 Hội sở chính, 129 Chi nhánh (trong đó có 1 chi nhánh nước ngoài), 238 Phòng Giao dịch",
+      "filter": null
+    },
+    {
+      "id": "d03",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Vì sao báo cáo tài chính hợp nhất của MB không hợp nhất Ngân hàng MBV?",
+      "expected_answer": "Theo điểm c khoản 1 Điều 185 Luật các TCTD số 32/2024/QH15, ngân hàng không phải hợp nhất báo cáo tài chính của ngân hàng thương mại được chuyển giao bắt buộc (MBV).",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        10
+      ],
+      "evidence_quote": "Điều 185 của Luật các Tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 1 năm 2024, Ngân hàng không phải hợp nhất báo cáo tài chính của ngân hàng thương mại được chuyển giao bắt buộc",
+      "filter": null
+    },
+    {
+      "id": "d04",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Tại ngày 30/09/2026 MB có bao nhiêu nhân viên?",
+      "expected_answer": "18.675 nhân viên (in là 18,675).",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        11
+      ],
+      "evidence_quote": "Tính đến ngày 30 tháng 09 năm 2026, MB có 18,675 nhân viên.",
+      "filter": null,
+      "note": "Bản gốc in '18.675' (chữ đậm); evidence giữ nguyên text OCR '18,675' để so khớp."
+    },
+    {
+      "id": "d05",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Các con số trong báo cáo tài chính hợp nhất được làm tròn và thể hiện theo đơn vị gì?",
+      "expected_answer": "Làm tròn đến hàng triệu, trình bày theo đơn vị triệu đồng Việt Nam.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        11
+      ],
+      "evidence_quote": "các số liệu được làm tròn đến hàng triệu và trình bày theo đơn vị triệu đồng Việt Nam",
+      "filter": null
+    },
+    {
+      "id": "d06",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "MB có phải trích lập dự phòng chung cho tiền gửi và cho vay các tổ chức tín dụng khác không?",
+      "expected_answer": "Không; theo Nghị định 86/2024 ngân hàng không cần trích lập dự phòng chung cho các khoản này.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        12
+      ],
+      "evidence_quote": "Theo Nghị định 86/2024, Ngân hàng không cần phải trích lập dự phòng chung đối với các khoản tiền gửi và cho vay các tổ chức tín dụng khác.",
+      "filter": null
+    },
+    {
+      "id": "d07",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Khoản cho vay trung hạn được định nghĩa với thời hạn bao lâu?",
+      "expected_answer": "Từ 1 năm đến 5 năm tính từ ngày giải ngân.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        13
+      ],
+      "evidence_quote": "Các khoản cho vay trung hạn có thời hạn cho vay từ 1 năm đến 5 năm tính từ ngày giải ngân.",
+      "filter": null
+    },
+    {
+      "id": "d08",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Những nhóm nợ nào bị MB coi là nợ xấu?",
+      "expected_answer": "Nợ dưới tiêu chuẩn, nợ nghi ngờ và nợ có khả năng mất vốn.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        13
+      ],
+      "evidence_quote": "Các khoản nợ được phân loại là Nợ dưới tiêu chuẩn, Nợ nghi ngờ và Nợ có khả năng mất vốn được coi là nợ xấu.",
+      "filter": null
+    },
+    {
+      "id": "d09",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Nếu một khách hàng có nhiều khoản nợ và một khoản bị chuyển sang nhóm rủi ro cao hơn thì các khoản còn lại được phân loại thế nào?",
+      "expected_answer": "Các khoản nợ còn lại của khách hàng đó cũng bị phân loại vào nhóm nợ rủi ro cao hơn tương ứng.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        13
+      ],
+      "evidence_quote": "có bất kỳ khoản nợ nào bị chuyển sang nhóm nợ rủi ro cao hơn thì Ngân hàng phân loại các khoản nợ còn lại của khách hàng đó vào nhóm nợ rủi ro cao hơn",
+      "filter": null
+    },
+    {
+      "id": "d10",
+      "split": "dev",
+      "type": "bang",
+      "question": "Khoản nợ quá hạn từ 10 đến 90 ngày phải trích dự phòng cụ thể theo tỷ lệ bao nhiêu?",
+      "expected_answer": "5% (thuộc nhóm 2 - nợ cần chú ý).",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        14
+      ],
+      "evidence_quote": "2 Nợ cần | (a) Nợ quá hạn từ 10 ngày đến 90 ngày; hoặc | 5%",
+      "filter": null,
+      "note": "Evidence là hàng bảng đã dựng lại (text_layout=rows): nhóm 2 | điều kiện (a) | tỷ lệ. Vẫn cần đối chiếu ảnh gốc."
+    },
+    {
+      "id": "d11",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Với khách hàng được cơ cấu lại nợ theo Thông tư 53/2024, đến 31/12/2025 MB phải trích bổ sung tối thiểu bao nhiêu phần trăm dự phòng cụ thể?",
+      "expected_answer": "Tối thiểu 70%.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        15
+      ],
+      "evidence_quote": "Đến thời điểm 31/12/2025: Tối thiểu 70% số tiền dự phòng cụ thể phải trích bổ sung",
+      "filter": null
+    },
+    {
+      "id": "d12",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Khi MB bán một khoản nợ nội bảng với giá cao hơn giá trị ghi sổ thì phần chênh lệch được hạch toán vào đâu?",
+      "expected_answer": "Vào thu nhập trong kỳ của MB.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        17
+      ],
+      "evidence_quote": "Trường hợp giá bán cao hơn giá trị ghi sổ khoản nợ thì phần chênh lệch cao hơn được hạch toán vào thu nhập trong kỳ của MB",
+      "filter": null
+    },
+    {
+      "id": "d13",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Khoản góp vốn nào được MB xếp vào nhóm đầu tư dài hạn khác?",
+      "expected_answer": "Khoản đầu tư vốn vào đơn vị khác mà MB có tối đa 11% quyền biểu quyết và chưa niêm yết trên thị trường chứng khoán.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        19
+      ],
+      "evidence_quote": "các khoản đầu tư vốn vào các đơn vị khác mà MB có tối đa 11% quyền biểu quyết và chưa niêm yết trên thị trường chứng khoán",
+      "filter": null
+    },
+    {
+      "id": "d14",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Lãi dự thu từ các khoản vay nhóm 2 đến nhóm 5 có được ghi nhận vào báo cáo kết quả hoạt động không?",
+      "expected_answer": "Không; lãi dự thu của các khoản vay nhóm 2-5 (và khoản cơ cấu theo Nghị định 55, Thông tư 53/2024) không được ghi nhận vào báo cáo kết quả hoạt động hợp nhất, mà chuyển ra theo dõi ngoại bảng và chỉ ghi nhận khi MB thực thu.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        26
+      ],
+      "evidence_quote": "Lãi dự thu phát sinh từ các khoản cho vay phân loại từ nhóm 2 đến nhóm 5 theo Thông tư 31 và các khoản vay được cơ cấu thời hạn trả nợ theo Nghị định 55 và Thông tư 53/2024 sẽ không được ghi nhận vào báo cáo kết quả hoạt động hợp nhất",
+      "filter": null
+    },
+    {
+      "id": "d15",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Theo phần chính sách kế toán, dự phòng chung được lập ở mức bao nhiêu?",
+      "expected_answer": "0,75% tổng số dư nợ nhóm 1 đến 4 (trừ tiền gửi/cho vay TCTD khác và nợ nhóm 5).",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        15
+      ],
+      "evidence_quote": "Dự phòng chung được lập với mức bằng 0,75% tổng số dư nợ nhóm 1 đến 4",
+      "filter": {
+        "section": "tm_dac_diem_chinh_sach_ke_toan"
+      }
+    },
+    {
+      "id": "d16",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Trong các phân tích rủi ro ở thuyết minh V, chứng khoán kinh doanh được xếp vào nhóm kỳ hạn nào?",
+      "expected_answer": "Kỳ hạn đến một tháng.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        56,
+        59
+      ],
+      "evidence_quote": "Chứng khoán kinh doanh được xếp vào loại kỳ hạn đến một tháng",
+      "filter": {
+        "section": "tm_thong_tin_khac"
+      },
+      "note": "Hai gold page hợp lệ: tr.56 (rủi ro lãi suất) và tr.59 (rủi ro thanh khoản)."
+    },
+    {
+      "id": "t01",
+      "split": "test",
+      "type": "dien_dat_lai",
+      "question": "MB đóng bảo hiểm xã hội và bảo hiểm tai nạn lao động cho nhân viên theo tỷ lệ nào?",
+      "expected_answer": "Lần lượt 17% và 0,5% lương cơ bản hàng tháng.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        28
+      ],
+      "evidence_quote": "đóng bảo hiểm xã hội và bảo hiểm tai nạn và bệnh nghề nghiệp cho mỗi nhân viên lần lượt bằng 17% và 0,5% lương cơ bản hàng tháng",
+      "filter": null
+    },
+    {
+      "id": "t02",
+      "split": "test",
+      "type": "truc_tiep",
+      "question": "Lợi thế thương mại từ hợp nhất kinh doanh được phân bổ trong bao lâu?",
+      "expected_answer": "Phân bổ theo đường thẳng trong 10 năm.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        21
+      ],
+      "evidence_quote": "Lợi thế thương mại được phân bổ theo phương pháp đường thẳng trong thời gian hữu ích được ước tính là mười (10) năm",
+      "filter": null
+    },
+    {
+      "id": "t03",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Khi mua một khoản nợ, MB phân loại số tiền đã trả vào nhóm nợ nào?",
+      "expected_answer": "Nhóm có mức độ rủi ro không thấp hơn nhóm của khoản nợ trước khi mua.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        16
+      ],
+      "evidence_quote": "MB phân loại số tiền đã thanh toán để mua nợ vào nhóm có mức độ rủi ro không thấp hơn nhóm mà khoản nợ đó đã được phân loại trước khi mua",
+      "filter": null
+    },
+    {
+      "id": "t04",
+      "split": "test",
+      "type": "truc_tiep",
+      "question": "MIC và MBLife trích quỹ dự trữ bắt buộc theo tỷ lệ nào và đến khi nào thì dừng?",
+      "expected_answer": "5% lợi nhuận sau thuế, cho tới khi quỹ bằng 10% vốn điều lệ.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        25
+      ],
+      "evidence_quote": "MIC và MBLife phải trích lập quỹ dự trữ bắt buộc từ lợi nhuận sau thuế theo tỷ lệ là 5% cho tới khi bằng 10% mức vốn điều lệ.",
+      "filter": null
+    },
+    {
+      "id": "t05",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Theo thuyết minh bổ sung cho báo cáo kết quả hoạt động, ngân hàng chịu thuế suất thuế TNDN bao nhiêu?",
+      "expected_answer": "20% trên thu nhập chịu thuế.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        50
+      ],
+      "evidence_quote": "Ngân hàng có nghĩa vụ nộp thuế thu nhập doanh nghiệp 20% trên thu nhập chịu thuế",
+      "filter": {
+        "section": "tm_bo_sung_ket_qua_hoat_dong"
+      }
+    },
+    {
+      "id": "t06",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Trong phần cam kết ngoại bảng ở thuyết minh V, mức ký quỹ MB yêu cầu khách hàng dao động trong khoảng nào?",
+      "expected_answer": "Từ 0% đến 100% giá trị cam kết, tùy mức độ tin cậy của khách hàng.",
+      "gold_source_id": "mbb-bctc-hn-q3-2026",
+      "gold_pages": [
+        51
+      ],
+      "evidence_quote": "Giá trị ký quỹ dao động từ 0% đến 100% giá trị cam kết được cấp, tùy thuộc vào mức độ tin cậy của khách hàng do Ngân hàng đánh giá",
+      "filter": {
+        "section": "tm_thong_tin_khac"
+      }
+    }
+  ]
+}

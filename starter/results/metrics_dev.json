@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "run_at": "2026-11-14T04:33:50+00:00",
+    "split": "dev",
+    "top_k": 3,
+    "benchmark_version": "1.0",
+    "benchmark_status": "FROZEN 2026-11-14 - không sửa câu test sau mốc này.",
+    "strategies": {
+      "A": {
+        "index": "A",
+        "use_filter": false,
+        "chunking": "fixed_size",
+        "size": 500,
+        "overlap": 50
+      },
+      "B": {
+        "index": "B",
+        "use_filter": false,
+        "chunking": "by_paragraph",
+        "max_size": 1000,
+        "min_size": 250
+      },
+      "C": {
+        "index": "B",
+        "use_filter": true,
+        "chunking": "by_paragraph",
+        "max_size": 1000,
+        "min_size": 250
+      }
+    },
+    "embedding_usage": {
+      "model": "text-embedding-3-small",
+      "dimensions": 1536,
+      "api_calls": 16,
+      "total_tokens": 628,
+      "estimated_cost_usd": 1.3e-05
+    },
+    "seconds": 6.69
+  },
+  "summary": {
+    "A": {
+      "dev": {
+        "n": 16,
+        "hit_at_1": "6/16",
+        "hit_at_1_rate": 0.375,
+        "evidence_hit_at_3": "9/16",
+        "evidence_hit_at_3_rate": 0.562,
+        "gold_page_at_3": "12/16",
+        "mrr_at_3": 0.458,
+        "evidence_split_suspects": [
+          "d03",
+          "d10",
+          "d11"
+        ],
+        "misses_at_3": [
+          "d01",
+          "d02",
+          "d03",
+          "d07",
+          "d10",
+          "d11",
+          "d16"
+        ],
+        "filter_questions_hit_at_3": "1/2",
+        "filter_compliance": "N/A",
+        "mean_search_ms": 36.1
+      }
+    },
+    "B": {
+      "dev": {
+        "n": 16,
+        "hit_at_1": "7/16",
+        "hit_at_1_rate": 0.438,
+        "evidence_hit_at_3": "12/16",
+        "evidence_hit_at_3_rate": 0.75,
+        "gold_page_at_3": "12/16",
+        "mrr_at_3": 0.583,
+        "evidence_split_suspects": [],
+        "misses_at_3": [
+          "d01",
+          "d02",
+          "d03",
+          "d08"
+        ],
+        "filter_questions_hit_at_3": "2/2",
+        "filter_compliance": "N/A",
+        "mean_search_ms": 31.1
+      }
+    },
+    "C": {
+      "dev": {
+        "n": 16,
+        "hit_at_1": "7/16",
+        "hit_at_1_rate": 0.438,
+        "evidence_hit_at_3": "12/16",
+        "evidence_hit_at_3_rate": 0.75,
+        "gold_page_at_3": "12/16",
+        "mrr_at_3": 0.583,
+        "evidence_split_suspects": [],
+        "misses_at_3": [
+          "d01",
+          "d02",
+          "d03",
+          "d08"
+        ],
+        "filter_questions_hit_at_3": "2/2",
+        "filter_compliance": "2/2",
+        "mean_search_ms": 29.4
+      }
+    }
+  }
+}
