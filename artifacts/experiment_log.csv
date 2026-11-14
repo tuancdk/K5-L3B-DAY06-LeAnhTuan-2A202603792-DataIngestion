@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,fixed_size (chars; within page),500,50,"document_id, source, page, section, report_period, report_type",none,openai text-embedding-3-small (1536d),,6/16,9/16,,,"297 chunks; text_layout=rows; pgvector exact cosine; misses@3 d01 d02 d03 d07 d10 d11 d16"
-B,by_paragraph (headings/paragraphs; within page; min 250),max 1000,0,"same as A + heading",none,openai text-embedding-3-small (1536d),,7/16,12/16,,,"194 chunks; misses@3 d01 d02 d03 d08"
-C,same chunks/vectors as B,max 1000,0,same as B,"section (only when question supplies one: d15 d16 t05 t06)",openai text-embedding-3-small (1536d),,7/16,12/16,,,"only difference vs B is the SQL filter; filter compliance dev 2/2"
+A,fixed_size (chars; within page),500,50,"document_id, source, page, section, report_period, report_type",none,openai text-embedding-3-small (1536d),,6/16,9/16,3/6,5/6,297 chunks; text_layout=rows; pgvector exact cosine; misses@3 d01 d02 d03 d07 d10 d11 d16
+B,by_paragraph (headings/paragraphs; within page; min 250),max 1000,0,same as A + heading,none,openai text-embedding-3-small (1536d),,7/16,12/16,4/6,6/6,194 chunks; misses@3 d01 d02 d03 d08
+C,same chunks/vectors as B,max 1000,0,same as B,section (only when question supplies one: d15 d16 t05 t06),openai text-embedding-3-small (1536d),,7/16,12/16,5/6,6/6,only difference vs B is the SQL filter; filter compliance dev 2/2; CHOSEN on dev before test (tie-break rule in benchmark meta); test filter compliance 2/2
