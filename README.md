@@ -1,5 +1,51 @@
 # Day 06 · Data Ingestion Engineering
 
+> ## Bài làm — Le Anh Tuan (2A202603792, L3B)
+>
+> **Corpus:** BCTC hợp nhất Q3/2026 của MB (PDF scan, 59 trang nội dung) · **OCR:** Google Cloud Vision · **Embedding:** OpenAI `text-embedding-3-small` (1536d) · **Store:** PostgreSQL 16 + pgvector 0.8.7, cosine exact · **Chiến lược chọn:** C (paragraph chunk + filter `section`)
+>
+> | Mục | File |
+> |---|---|
+> | Báo cáo cá nhân | [report/individual/2A202603792_LeAnhTuan.md](report/individual/2A202603792_LeAnhTuan.md) |
+> | Manifest corpus (nguồn, quyền, trang, section) | [data/manifest.json](data/manifest.json) |
+> | Benchmark 22 câu (16 dev / 6 test, FROZEN) | [benchmark/questions.json](benchmark/questions.json) |
+> | Cấu hình và kết quả A/B/C | [artifacts/experiment_log.csv](artifacts/experiment_log.csv) |
+> | Trace, chỉ số, log | `starter/results/` (`traces_*.jsonl`, `metrics_*.md`, `ingest_report.json`, `logs/`) |
+> | Nhãn audit thủ công | `starter/results/audit/` (`audit_summary.md`) |
+> | Kết quả OCR theo trang (tái lập không cần gọi API) | `starter/data/ocr/mbb_q3_2026/` |
+>
+> ### Cài đặt và chạy (Windows PowerShell, từ thư mục `starter/`)
+>
+> ```powershell
+> python -m venv .venv; .venv\Scripts\Activate.ps1
+> python -m pip install -r requirements.txt
+> Copy-Item .env.example .env   # điền OPENAI_API_KEY, EMBEDDING_MODEL=text-embedding-3-small
+>                               # (GOOGLE_VISION_API_KEY chỉ cần nếu OCR lại)
+> docker compose -p day6_student_starter up -d --wait
+> python scripts/check_setup.py
+>
+> # 1. (Tùy chọn) Tải PDF gốc và OCR lại — repo đã có sẵn kết quả OCR
+> #    URL và sha256 trong data/manifest.json; lưu vào data/raw_mbb/
+> python -m src.ocr data/raw_mbb/MBB_Baocaotaichinh_Q3_2026_Hopnhat.pdf data/ocr/mbb_q3_2026
+> # 2. Kiểm tra corpus (>= 30 trang) và benchmark
+> python scripts/build_manifest.py
+> python scripts/validate_benchmark.py
+> # 3. Chunk A/B, embed, lưu pgvector (nạp lại không nhân đôi)
+> python -m src.run ingest
+> # 4. Đánh giá A/B/C; test chỉ chạy khi benchmark FROZEN
+> python -m src.run evaluate --split dev
+> python -m src.run evaluate --split test
+> # 5. Audit thủ công: tạo mẫu, tổng hợp nhãn
+> python scripts/make_audit.py coherence; python scripts/make_audit.py test
+> python scripts/score_audit.py
+> # 6. Giao diện kiểm tra (chat truy xuất + trang kiểm chứng benchmark)
+> streamlit run app.py
+> ```
+>
+> Python 3.12.3, Docker 28.1.1; phiên bản thư viện ghi trong `starter/requirements.txt`. Không commit `.env` và PDF gốc.
+
+---
+
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
 
 Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
