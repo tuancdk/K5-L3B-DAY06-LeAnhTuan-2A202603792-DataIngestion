@@ -1,6 +1,6 @@
 # Thông tin học viên
 
-- Họ và tên: Le Anh Tuan
+- Họ và tên: Lê Anh Tuấn
 - MSSV: 2A202603792
 - Lớp: L3B
 - Chủ đề và corpus: Báo cáo tài chính hợp nhất Quý III/2026 của Ngân hàng TMCP Quân đội (MB) — PDF scan 61 trang (59 trang nội dung), OCR bằng Google Cloud Vision; xem `data/manifest.json`

@@ -1,6 +1,6 @@
 # Day 06 · Data Ingestion Engineering
 
-> ## Bài làm — Le Anh Tuan (2A202603792, L3B)
+> ## Bài làm — Lê Anh Tuấn (2A202603792, L3B)
 >
 > **Corpus:** BCTC hợp nhất Q3/2026 của MB (PDF scan, 59 trang nội dung) · **OCR:** Google Cloud Vision · **Embedding:** OpenAI `text-embedding-3-small` (1536d) · **Store:** PostgreSQL 16 + pgvector 0.8.7, cosine exact · **Chiến lược chọn:** C (paragraph chunk + filter `section`)
 >
