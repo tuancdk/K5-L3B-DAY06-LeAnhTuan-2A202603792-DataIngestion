@@ -1,4 +1,4 @@
-﻿position_id,page,section,anchor_line,strategy,chunk_id,chunk_chars,chunk_text,label_0_2,reason
+﻿position_id,page,section,anchor_line,strategy,chunk_id,chunk_chars,chunk_text,label_0_2,reason,ai_suggestion,ai_reason,label_source
 P01,3,bc_tinh_hinh_tai_chinh,"Dự phòng rủi ro chứng khoán đầu tư | (236.878) | (232.739),",A,mbb-bctc-hn-q3-2026:p003:fixed500o50:002,500,"ư | 111.8 | 256.975.081 | 225.574.850
 Chứng khoán đầu tư sẵn sàng để bán | III.8.1 | 252.453.626 | 221.512.464
 Chứng khoán đầu tư giữ đến ngày đáo hạn | III.8.2 | 4.758.333 | 4.295.125
@@ -7,7 +7,7 @@ Góp vốn, đầu tư dài hạn | ||1.9 | 430.520 | 468.396
 Đầu tư dài hạn khác | III.9.1 | 521.748 | 559.624
 |Dự phòng giảm giá đầu tư dài hạn | (91.228) | (91.228)
 Tài sản cố định | 6.112.427 | 5.616.547
-|Tài sản cố định hữu hình | III.10 | 4.273.312 | 3.805.53",,
+|Tài sản cố định hữu hình | III.10 | 4.273.312 | 3.805.53",1,"Hàng bảng chứa vị trí neo còn nguyên nhưng chunk thiếu tiêu đề cột (không biết cột nào là 30/09/2026 hay 31/12/2025); dòng đầu bị cắt giữa từ ('ư | 111.8'), số cuối bị cụt ('3.805.53').",1,"Hàng bảng chứa vị trí neo còn nguyên nhưng chunk thiếu tiêu đề cột (không biết cột nào là 30/09/2026 hay 31/12/2025); dòng đầu bị cắt giữa từ ('ư | 111.8'), số cuối bị cụt ('3.805.53').",AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P01,3,bc_tinh_hinh_tai_chinh,"Dự phòng rủi ro chứng khoán đầu tư | (236.878) | (232.739),",B,mbb-bctc-hn-q3-2026:p003:para1000:001,623,"Chứng khoán đầu tư | 111.8 | 256.975.081 | 225.574.850
 Chứng khoán đầu tư sẵn sàng để bán | III.8.1 | 252.453.626 | 221.512.464
 Chứng khoán đầu tư giữ đến ngày đáo hạn | III.8.2 | 4.758.333 | 4.295.125
@@ -18,7 +18,7 @@ Góp vốn, đầu tư dài hạn | ||1.9 | 430.520 | 468.396
 Tài sản cố định | 6.112.427 | 5.616.547
 |Tài sản cố định hữu hình | III.10 | 4.273.312 | 3.805.533
 |Nguyên giá tài sản cố định | 10.208.543 | 9.423.236
-Hao mòn tài sản cố định | (5.935.231) | (5.617.703)",,
+Hao mòn tài sản cố định | (5.935.231) | (5.617.703)",1,Các hàng bảng nguyên vẹn nhưng vẫn thiếu dòng tiêu đề kỳ báo cáo nên không biết số thuộc kỳ nào.,1,Các hàng bảng nguyên vẹn nhưng vẫn thiếu dòng tiêu đề kỳ báo cáo nên không biết số thuộc kỳ nào.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P02,9,tm_dac_diem_chinh_sach_ke_toan,Ông Lê Viết Hải | Thành viên,A,mbb-bctc-hn-q3-2026:p009:fixed500o50:001,499,"đốc Ngân hàng Nhà nước Việt Nam (""NHNNVN”) cấp, thay thế Giấy
 phép hoạt động số 100/GP-NHNN ngày 16/10/2018 và các văn bản sửa đổi, bổ sung liên quan,
 có thời hạn là 99 năm kể từ ngày 14/9/1994.
@@ -31,7 +31,7 @@ Bà Nguyễn Thị Hải Lý | Phó Chủ tịch
 Ông Vũ Thành Trung | Phó Chủ tịch
 Ông Phạm Như Anh | Thành viên
 Ông Lê Viết Hải | Thành viên
-Ông Nguyễn Việt Quân",,
+Ông Nguyễn Việt Quân",2,Hàng 'Ông Lê Viết Hải | Thành viên' có tiêu đề 'Thành phần Hội Đồng Quản Trị' trong chunk nên hiểu được; tuy vậy chunk bắt đầu giữa câu và cắt mất chức vụ ở dòng cuối.,2,Hàng 'Ông Lê Viết Hải | Thành viên' có tiêu đề 'Thành phần Hội Đồng Quản Trị' trong chunk nên hiểu được; tuy vậy chunk bắt đầu giữa câu và cắt mất chức vụ ở dòng cuối.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P02,9,tm_dac_diem_chinh_sach_ke_toan,Ông Lê Viết Hải | Thành viên,B,mbb-bctc-hn-q3-2026:p009:para1000:001,425,"2. | Hình thức sở hữu vốn: Cổ phần
 3. | Thành phần Hội Đồng Quản Trị
 Họ và tên | Chức vụ
@@ -44,14 +44,14 @@ Bà Nguyễn Thị Hải Lý | Phó Chủ tịch
 Ông Nguyễn Việt Quân | Thành viên
 Bà Hoàng Thị Thu Hiền | Thành viên
 Ông Vũ Xuân Nam | Thành viên
-Ông Hoàng Văn Sâm | Thành viên HĐQT độc lập",,
+Ông Hoàng Văn Sâm | Thành viên HĐQT độc lập",2,Trọn danh sách HĐQT kèm tiêu đề mục và tiêu đề cột.,2,Trọn danh sách HĐQT kèm tiêu đề mục và tiêu đề cột.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P03,16,tm_dac_diem_chinh_sach_ke_toan,khoản nợ và các nghĩa vụ tài chính khác liên quan đến khoản nợ (nếu có) đến thời điểm,A,mbb-bctc-hn-q3-2026:p016:fixed500o50:002,500,"2/TT-NHNN (""Thông tư 18/2022”) của Ngân hàng nhà nước
 quy định về hoạt động mua, bán nợ của các tổ chức tín dụng, chi nhánh ngân hàng nước ngoài.
 Giá trị ghi sổ khoản nợ được mua, bản gồm giá trị ghi sổ số dư nợ gốc, dự nợ lãi của
 khoản nợ và các nghĩa vụ tài chính khác liên quan đến khoản nợ (nếu có) đến thời điểm
 mua, bán nợ đối với các khoản nợ đang được hạch toán nội bảng, ngoại bảng; hoặc trên
 sổ sách tại thời điểm xuất toán ngoại bằng hoặc tại thời điểm mua, bán nợ đối với khoản
-nợ đã xuất",,
+nợ đã xuất",1,"Câu định nghĩa 'giá trị ghi sổ khoản nợ' bị cắt ở cuối ('nợ đã xuất'), chunk mở đầu bằng mẩu '2/TT-NHNN' và thiếu tiêu đề 'Hoạt động mua, bán nợ'.",1,"Câu định nghĩa 'giá trị ghi sổ khoản nợ' bị cắt ở cuối ('nợ đã xuất'), chunk mở đầu bằng mẩu '2/TT-NHNN' và thiếu tiêu đề 'Hoạt động mua, bán nợ'.",AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P03,16,tm_dac_diem_chinh_sach_ke_toan,khoản nợ và các nghĩa vụ tài chính khác liên quan đến khoản nợ (nếu có) đến thời điểm,B,mbb-bctc-hn-q3-2026:p016:para1000:001,779,"10. Hoạt động mua, bán nợ
 Hoạt động mua, bán nợ của MB được ghi nhận theo Thông tư số 09/2015/TT-NHNN (""Thông
 tư 09/2015"") và Thông tư 18/2022/TT-NHNN (""Thông tư 18/2022”) của Ngân hàng nhà nước
@@ -62,7 +62,7 @@ mua, bán nợ đối với các khoản nợ đang được hạch toán nội 
 sổ sách tại thời điểm xuất toán ngoại bằng hoặc tại thời điểm mua, bán nợ đối với khoản
 nợ đã xuất toán ra khỏi Báo cáo tình hình tài chính.
 Giá mua, bán nợ là số tiền bên mua nợ phải thanh toán cho bên bán nợ theo hợp đồng
-mua, bán nợ.",,
+mua, bán nợ.",2,"Có tiêu đề '10. Hoạt động mua, bán nợ', câu định nghĩa trọn vẹn và đoạn giá mua/bán nợ.",2,"Có tiêu đề '10. Hoạt động mua, bán nợ', câu định nghĩa trọn vẹn và đoạn giá mua/bán nợ.",AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P04,22,tm_dac_diem_chinh_sach_ke_toan,Thu nhập từ tiền cho thuê hoạt động được hạch toán vào Báo cáo kết quả hoạt động hợp nhất,A,mbb-bctc-hn-q3-2026:p022:fixed500o50:002,500,"cáo tình
 hình tài chính hợp nhất. Chi phí trực tiếp ban đầu để thương thảo thỏa thuận cho thuê hoạt
 động được ghi nhận vào Báo cáo kết quả hoạt động hợp nhất khi phát sinh.
@@ -70,13 +70,13 @@ Thu nhập từ tiền cho thuê hoạt động được hạch toán vào Báo 
 theo phương pháp đường thẳng trong suốt thời gian cho thuê.
 22. Các khoản nợ Chính phủ và Ngân hàng Nhà nước
 Các khoản nợ Chính phủ và Ngân hàng Nhà nước được phản ánh theo giá gốc.
-23. Tiền gửi của các tổ chức tín dụng khác, tiền gửi củ",,
+23. Tiền gửi của các tổ chức tín dụng khác, tiền gửi củ",1,Câu về thu nhập cho thuê còn nguyên nhưng mất điều kiện 'Trong trường hợp MB là bên cho thuê'; chunk mở đầu giữa câu ('cáo tình hình...') và kết thúc cụt ('tiền gửi củ').,1,Câu về thu nhập cho thuê còn nguyên nhưng mất điều kiện 'Trong trường hợp MB là bên cho thuê'; chunk mở đầu giữa câu ('cáo tình hình...') và kết thúc cụt ('tiền gửi củ').,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P04,22,tm_dac_diem_chinh_sach_ke_toan,Thu nhập từ tiền cho thuê hoạt động được hạch toán vào Báo cáo kết quả hoạt động hợp nhất,B,mbb-bctc-hn-q3-2026:p022:para1000:001,441,"Trong trường hợp MB là bên cho thuê
 Tài sản theo hợp đồng cho thuê hoạt động được ghi nhận là tài sản cố định trên Báo cáo tình
 hình tài chính hợp nhất. Chi phí trực tiếp ban đầu để thương thảo thỏa thuận cho thuê hoạt
 động được ghi nhận vào Báo cáo kết quả hoạt động hợp nhất khi phát sinh.
 Thu nhập từ tiền cho thuê hoạt động được hạch toán vào Báo cáo kết quả hoạt động hợp nhất
-theo phương pháp đường thẳng trong suốt thời gian cho thuê.",,
+theo phương pháp đường thẳng trong suốt thời gian cho thuê.",2,Có điều kiện 'Trong trường hợp MB là bên cho thuê' và trọn đoạn.,2,Có điều kiện 'Trong trường hợp MB là bên cho thuê' và trọn đoạn.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P05,29,tm_dac_diem_chinh_sach_ke_toan,cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể (bộ phận chia theo vùng địa,A,mbb-bctc-hn-q3-2026:p029:fixed500o50:001,500,"g cùng lúc
 vào Quỹ Bảo hiểm Thất nghiệp. Bảo hiểm thất nghiệp được ghi nhận trong báo cáo kết quả
 hoạt động hợp nhất khi phát sinh.
@@ -84,13 +84,13 @@ hoạt động hợp nhất khi phát sinh.
 Một bộ phận là một hợp phần có thể xác định riêng biệt của MB tham gia vào việc cung cấp
 các sản phẩm hoặc dịch vụ liên quan (bộ phận chia theo hoạt động kinh doanh), hoặc cung
 cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể (bộ phận chia theo vùng địa
-lý), mỗi bộ phận này chịu rủi ro và thu được lợi ích khác biệt với các bộ phận kh",,
+lý), mỗi bộ phận này chịu rủi ro và thu được lợi ích khác biệt với các bộ phận kh",1,"Có tiêu đề '34. Báo cáo bộ phận' nhưng câu định nghĩa bị cắt ('khác biệt với các bộ phận kh'), mất câu cuối; đầu chunk là mẩu thừa của mục bảo hiểm thất nghiệp.",1,"Có tiêu đề '34. Báo cáo bộ phận' nhưng câu định nghĩa bị cắt ('khác biệt với các bộ phận kh'), mất câu cuối; đầu chunk là mẩu thừa của mục bảo hiểm thất nghiệp.",AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P05,29,tm_dac_diem_chinh_sach_ke_toan,cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể (bộ phận chia theo vùng địa,B,mbb-bctc-hn-q3-2026:p029:para1000:001,459,"34. Báo cáo bộ phận
 Một bộ phận là một hợp phần có thể xác định riêng biệt của MB tham gia vào việc cung cấp
 các sản phẩm hoặc dịch vụ liên quan (bộ phận chia theo hoạt động kinh doanh), hoặc cung
 cấp sản phẩm hoặc dịch vụ trong một môi trường kinh tế cụ thể (bộ phận chia theo vùng địa
 lý), mỗi bộ phận này chịu rủi ro và thu được lợi ích khác biệt với các bộ phận khác. Mẫu báo
-cáo bộ phận chính yếu của MB là dựa theo bộ phận chia theo lĩnh vực kinh doanh.",,
+cáo bộ phận chính yếu của MB là dựa theo bộ phận chia theo lĩnh vực kinh doanh.",2,Trọn mục 34 Báo cáo bộ phận.,2,Trọn mục 34 Báo cáo bộ phận.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P06,35,tm_bo_sung_tinh_hinh_tai_chinh,Chứng khoán nợ do Chính phủ bảo lãnh | (3 i) | 21.975.806 | 22.204.008,A,mbb-bctc-hn-q3-2026:p035:fixed500o50:001,499,"Chi tiết các khoản chứng khoán đầu tư sẵn sàng để bán của MB như sau:
 30/09/2026 | 31/12/2025
 Triệu đồng | Triệu đồng
@@ -102,7 +102,7 @@ hành | (ii) | 167.320.381 | 135.852.313
 Chứng khoán nợ do TCKT trong nước phát
 hành | (iii) | 22.964.153 | 21.780.026
 252.453.626 | 221.512.464
-Dự phòng giảm giá chứng",,
+Dự phòng giảm giá chứng",2,Hàng neo có tên bảng 'chứng khoán đầu tư sẵn sàng để bán' và tiêu đề cột ngày; chỉ dòng cuối bị cụt.,2,Hàng neo có tên bảng 'chứng khoán đầu tư sẵn sàng để bán' và tiêu đề cột ngày; chỉ dòng cuối bị cụt.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P06,35,tm_bo_sung_tinh_hinh_tai_chinh,Chứng khoán nợ do Chính phủ bảo lãnh | (3 i) | 21.975.806 | 22.204.008,B,mbb-bctc-hn-q3-2026:p035:para1000:001,608,"8. | Chứng khoán đầu tư
 8.1 Chứng khoán đầu tư sẵn sàng để bán
 Chi tiết các khoản chứng khoán đầu tư sẵn sàng để bán của MB như sau:
@@ -117,7 +117,7 @@ Chứng khoán nợ do TCKT trong nước phát
 hành | (iii) | 22.964.153 | 21.780.026
 252.453.626 | 221.512.464
 Dự phòng giảm giá chứng khoán sẵn
-sàng để bán | (172.232) | (163.351)",,
+sàng để bán | (172.232) | (163.351)",2,"Có tiêu đề '8.1', tiêu đề cột và trọn bảng.",2,"Có tiêu đề '8.1', tiêu đề cột và trọn bảng.",AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P07,42,tm_bo_sung_tinh_hinh_tai_chinh,Các khoản khác | 3.534.006 | 4.416.084,A,mbb-bctc-hn-q3-2026:p042:fixed500o50:001,500,"7.684 | 1.525.624
 - Phải thu miễn truy đòi theo bộ chứng từ | 13.596.584 | 8.046.079
 - Các khoản phải thu khác | 5.367.388 | 16.263.371
@@ -133,7 +133,7 @@ Các khoản khác | 3.534.006 | 4.416.084
 Triệu đồng | Triệu đồng
 Các khoản nợ chính phủ và NHNN | 37.855.678 | 47.474.800
 37.855.678 | 47.474.800
-16.",,
+16.",2,Bảng '14. Tài sản có khác' trọn kèm tiêu đề cột; chunk lẫn mẩu số không nhãn của bảng trước và mẩu '16.' ở cuối.,2,Bảng '14. Tài sản có khác' trọn kèm tiêu đề cột; chunk lẫn mẩu số không nhãn của bảng trước và mẩu '16.' ở cuối.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P07,42,tm_bo_sung_tinh_hinh_tai_chinh,Các khoản khác | 3.534.006 | 4.416.084,B,mbb-bctc-hn-q3-2026:p042:para1000:001,336,"14. Tài sản có khác
 30/09/2026 | 31/12/2025
 Triệu đồng | Triệu đồng
@@ -144,7 +144,7 @@ Các khoản khác | 3.534.006 | 4.416.084
 30/09/2026 | 31/12/2025
 Triệu đồng | Triệu đồng
 Các khoản nợ chính phủ và NHNN | 37.855.678 | 47.474.800
-37.855.678 | 47.474.800",,
+37.855.678 | 47.474.800",2,Bảng 14 và 15 trọn vẹn kèm tiêu đề cột.,2,Bảng 14 và 15 trọn vẹn kèm tiêu đề cột.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P08,48,tm_bo_sung_ket_qua_hoat_dong,Lợi nhuận sau thuế hợp nhất của MB quý III năm 2026 so với quý III năm 2025 tăng 2.451.448,A,mbb-bctc-hn-q3-2026:p048:fixed500o50:001,499,"- Chi phí khấu hao và khấu trừ | 894.905 | 799.811
 Chi cho hoạt động quản lý công vụ | 2.995.659 | 2.456.824
 Chi nộp phí bảo hiểm, bảo toàn tiền gửi của khách
@@ -156,7 +156,7 @@ Lợi nhuận sau thuế hợp nhất của MB quý III năm 2026 so với quý 
 triệu đồng tương đương mức 42,26% do các nguyên nhân sau:
 Ảnh hưởng
 Khoản mục có biến động lớn | Lợi nhuận sau thuế
-Tri",,
+Tri",1,Câu 'LNST quý III/2026 tăng 2.451.448 triệu đồng... do các nguyên nhân sau' còn nguyên nhưng bảng nguyên nhân bị cắt ngay sau tiêu đề nên ý chưa trọn.,1,Câu 'LNST quý III/2026 tăng 2.451.448 triệu đồng... do các nguyên nhân sau' còn nguyên nhưng bảng nguyên nhân bị cắt ngay sau tiêu đề nên ý chưa trọn.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P08,48,tm_bo_sung_ket_qua_hoat_dong,Lợi nhuận sau thuế hợp nhất của MB quý III năm 2026 so với quý III năm 2025 tăng 2.451.448,B,mbb-bctc-hn-q3-2026:p048:para1000:001,942,"8. | Giải trình biến động lợi nhuận:
 Lợi nhuận sau thuế hợp nhất của MB quý III năm 2026 so với quý III năm 2025 tăng 2.451.448
 triệu đồng tương đương mức 42,26% do các nguyên nhân sau:
@@ -177,13 +177,13 @@ Giảm lợi nhuận do tăng chi phí hoạt động | (974.787)
 Giảm lợi nhuận do tăng chi phí dự phòng | (1.439.782)
 Giảm lợi nhuận do tăng chi phí thuế TNDN | (628.748)
 Tổng ảnh hưởng đến kết quả kinh doanh | 2.451.432
-40",,
+40",2,Trọn câu giải trình và toàn bộ bảng nguyên nhân.,2,Trọn câu giải trình và toàn bộ bảng nguyên nhân.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P09,55,tm_thong_tin_khac,"dụng để quản lý rủi ro thanh khoản. Ngân hàng thưởng tiến hành đánh giá chênh lệch lãi suất,",A,mbb-bctc-hn-q3-2026:p055:fixed500o50:004,499,"các khoản tiền gửi có kỳ hạn tại Ngân hàng Nhà nước và các tổ chức
 tín dụng khác và các giấy tờ có giá. Các tỷ lệ an toàn có tính đến yếu tố rủi ro cũng được sử
 dụng để quản lý rủi ro thanh khoản. Ngân hàng thưởng tiến hành đánh giá chênh lệch lãi suất,
 so sánh với các thị trường trong nước và quốc tế để có những điều chỉnh kịp thời. Thêm vào
 đó, việc áp dụng các quy trình quản lý rủi ro nội bộ cũng trở nên hiệu quả hơn nhờ việc triển
-khai Hệ thống Quản lý Vốn Tập trung và Hệ thống Thanh toán T",,
+khai Hệ thống Quản lý Vốn Tập trung và Hệ thống Thanh toán T",1,"Chunk mở đầu bằng mệnh đề thiếu chủ ngữ ('các khoản tiền gửi có kỳ hạn...', mất 'Rủi ro thanh khoản được hạn chế thông qua') và cắt cuối ('Thanh toán T').",1,"Chunk mở đầu bằng mệnh đề thiếu chủ ngữ ('các khoản tiền gửi có kỳ hạn...', mất 'Rủi ro thanh khoản được hạn chế thông qua') và cắt cuối ('Thanh toán T').",AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P09,55,tm_thong_tin_khac,"dụng để quản lý rủi ro thanh khoản. Ngân hàng thưởng tiến hành đánh giá chênh lệch lãi suất,",B,mbb-bctc-hn-q3-2026:p055:para1000:002,984,"Trong quá trình quản lý rủi ro tín dụng, Ngân hàng đã sử dụng có hiệu quả Cẩm nang Tín dụng
 trong đó ghi chi tiết các chính sách và thủ tục cho vay cũng như các hướng dẫn thực hiện để
 chuẩn hóa các hoạt động tín dụng của Ngân hàng. Rủi ro thanh khoản được hạn chế thông
@@ -194,7 +194,7 @@ dụng để quản lý rủi ro thanh khoản. Ngân hàng thưởng tiến hà
 so sánh với các thị trường trong nước và quốc tế để có những điều chỉnh kịp thời. Thêm vào
 đó, việc áp dụng các quy trình quản lý rủi ro nội bộ cũng trở nên hiệu quả hơn nhờ việc triển
 khai Hệ thống Quản lý Vốn Tập trung và Hệ thống Thanh toán Tập trung, theo đó toàn bộ các
-giao dịch vốn và thanh toán của Ngân hàng đều do Hội sở chính thực hiện.",,
+giao dịch vốn và thanh toán của Ngân hàng đều do Hội sở chính thực hiện.",2,Trọn đoạn quản lý rủi ro tín dụng/thanh khoản; chỉ thiếu tiêu đề mục 5.1 nhưng nội dung tự hiểu được.,2,Trọn đoạn quản lý rủi ro tín dụng/thanh khoản; chỉ thiếu tiêu đề mục 5.1 nhưng nội dung tự hiểu được.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P10,61,tm_thong_tin_khac,"SEK | 2.651,49 | 2.879,53",A,mbb-bctc-hn-q3-2026:p061:fixed500o50:000,499,"6. Tỷ giá một số ngoại tệ tại thời điểm lập báo cáo:
 30/09/2026 | 31/12/2025
 đồng | đồng
@@ -215,7 +215,7 @@ ONYH
 MB QAN
 Ashe | BO
 MS:0100280873-
-Bà Lê Thị Huyền Trang Giám Bà Đặng",,
+Bà Lê Thị Huyền Trang Giám Bà Đặng",2,Bảng tỷ giá trọn kèm tiêu đề mục và cột; có thêm phần chữ ký/dấu OCR nhiễu ở cuối.,2,Bảng tỷ giá trọn kèm tiêu đề mục và cột; có thêm phần chữ ký/dấu OCR nhiễu ở cuối.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 P10,61,tm_thong_tin_khac,"SEK | 2.651,49 | 2.879,53",B,mbb-bctc-hn-q3-2026:p061:para1000:000,403,"6. Tỷ giá một số ngoại tệ tại thời điểm lập báo cáo:
 30/09/2026 | 31/12/2025
 đồng | đồng
@@ -229,4 +229,4 @@ CAD | 18.365,50 | 19.250,50
 SGD | 20.365,00 | 20.505,50
 THB | 782,00 | 841,86
 SEK | 2.651,49 | 2.879,53
-Người lập: | Người kiểm soát: | Người phê duyệt:",,
+Người lập: | Người kiểm soát: | Người phê duyệt:",2,Bảng tỷ giá trọn kèm tiêu đề mục và cột.,2,Bảng tỷ giá trọn kèm tiêu đề mục và cột.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14

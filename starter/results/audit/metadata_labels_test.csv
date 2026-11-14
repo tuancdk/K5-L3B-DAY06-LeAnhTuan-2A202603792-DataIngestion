@@ -1,115 +1,115 @@
-﻿question_id,strategy,rank,chunk_id,source,page,section,applied_filter,chunk_text_preview,source_ok_1_0,page_ok_1_0,section_ok_1_0,metadata_ok_1_0,error_note
+﻿question_id,strategy,rank,chunk_id,source,page,section,applied_filter,chunk_text_preview,source_ok_1_0,page_ok_1_0,section_ok_1_0,metadata_ok_1_0,error_note,ai_suggestion,ai_reason,label_source
 t01,A,1,mbb-bctc-hn-q3-2026:p028:fixed500o50:005,mbb-bctc-hn-q3-2026,28,tm_dac_diem_chinh_sach_ke_toan,,"hành trong kỳ được trình bày trên báo cáo tài chính hợp nhất, dẫn đến điều
 chỉnh tương ứng của chỉ tiêu lãi cơ bản trên cổ phiếu.
 33. Lợi ích của nhân viên
 a. | Trợ cấp nghỉ hưu
 Nhân viên MB tại Việt Nam khi nghỉ hưu sẽ được nhận trợ cấp về hưu từ Bảo hiểm Xã hội
-thuộc Bộ Lao động và Thương binh Xã ",,,,,
+thuộc Bộ Lao động và Thương binh Xã ",1,1,1,1,,1,text chunk khớp trang OCR 28; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,A,2,mbb-bctc-hn-q3-2026:p028:fixed500o50:006,mbb-bctc-hn-q3-2026,28,tm_dac_diem_chinh_sach_ke_toan,,"họ trong thời gian làm việc. Ngoài ra, MB không có một nghĩa vụ nào khác. Bảo hiểm
 xã hội và bảo hiểm tai nạn và bệnh nghề nghiệp được ghi nhận trong báo cáo kết quả hoạt
 động hợp nhất.
 b. | Trợ cấp thôi việc
 Theo Điều 46 Bộ Luật Lao động số 45/2019/QH14 có hiệu lực ngày 1 tháng 1 năm 2021, MB
-có ng",,,,,
+có ng",1,1,1,1,,1,text chunk khớp trang OCR 28; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,A,3,mbb-bctc-hn-q3-2026:p023:fixed500o50:007,mbb-bctc-hn-q3-2026,23,tm_dac_diem_chinh_sach_ke_toan,,"sắt và đường hàng không: bằng 25% tổng phí bảo hiểm thuộc năm
 tài chính của nghiệp vụ bảo hiểm này.
 Đối với các nghiệp vụ bảo hiểm phi nhân thọ khác: bằng 50% tổng phí bảo hiểm thuộc
 năm tài chính của nghiệp vụ bảo hiểm này.
-15",,,,,
+15",1,1,1,1,,1,text chunk khớp trang OCR 23; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,B,1,mbb-bctc-hn-q3-2026:p028:para1000:003,mbb-bctc-hn-q3-2026,28,tm_dac_diem_chinh_sach_ke_toan,,"33. Lợi ích của nhân viên
 a. | Trợ cấp nghỉ hưu
 Nhân viên MB tại Việt Nam khi nghỉ hưu sẽ được nhận trợ cấp về hưu từ Bảo hiểm Xã hội
 thuộc Bộ Lao động và Thương binh Xã hội. MB sẽ phải đóng bảo hiểm xã hội và bảo hiểm tai
-nạn và bệnh nghề nghiệp cho mỗi nhân viên lần lượt bằng 17% và 0,5% lương cơ ",,,,,
+nạn và bệnh nghề nghiệp cho mỗi nhân viên lần lượt bằng 17% và 0,5% lương cơ ",1,1,1,1,,1,text chunk khớp trang OCR 28; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,B,2,mbb-bctc-hn-q3-2026:p029:para1000:000,mbb-bctc-hn-q3-2026,29,tm_dac_diem_chinh_sach_ke_toan,,"C. | Trợ cấp thất nghiệp
 Theo Thông tư số 28/2015/TT-BLĐTBXH hướng dẫn Nghị định số 28/2015/NĐ-CP ngày 12
 tháng 3 năm 2015 của Chính phủ quy định về bảo hiểm thất nghiệp, từ ngày 1 tháng 1 năm
 2009, MB có nghĩa vụ đóng bảo hiểm thất nghiệp với mức bằng 1% quỹ tiền lương, tiền công
-đóng bảo hiểm thất",,,,,
+đóng bảo hiểm thất",1,1,1,1,,1,text chunk khớp trang OCR 29; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,B,3,mbb-bctc-hn-q3-2026:p024:para1000:001,mbb-bctc-hn-q3-2026,24,tm_dac_diem_chinh_sach_ke_toan,,"1 năm:
 Đối với các nghiệp vụ bảo hiểm phi nhân thọ: Dự phòng phi chưa được hưởng sẽ được
 tính theo công thức sau:
 Phí bảo hiểm x Số ngày bảo hiểm còn lại của hợp đồng
 Dự phòng phí chưa | bảo hiểm, tái bảo hiểm
 được hưởng | Tổng số ngày bảo hiểm theo hợp đồng bảo hiểm, tái bảo
-hiễm",,,,,
+hiễm",1,1,1,1,,1,text chunk khớp trang OCR 24; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,C,1,mbb-bctc-hn-q3-2026:p028:para1000:003,mbb-bctc-hn-q3-2026,28,tm_dac_diem_chinh_sach_ke_toan,,"33. Lợi ích của nhân viên
 a. | Trợ cấp nghỉ hưu
 Nhân viên MB tại Việt Nam khi nghỉ hưu sẽ được nhận trợ cấp về hưu từ Bảo hiểm Xã hội
 thuộc Bộ Lao động và Thương binh Xã hội. MB sẽ phải đóng bảo hiểm xã hội và bảo hiểm tai
-nạn và bệnh nghề nghiệp cho mỗi nhân viên lần lượt bằng 17% và 0,5% lương cơ ",,,,,
+nạn và bệnh nghề nghiệp cho mỗi nhân viên lần lượt bằng 17% và 0,5% lương cơ ",1,1,1,1,,1,text chunk khớp trang OCR 28; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,C,2,mbb-bctc-hn-q3-2026:p029:para1000:000,mbb-bctc-hn-q3-2026,29,tm_dac_diem_chinh_sach_ke_toan,,"C. | Trợ cấp thất nghiệp
 Theo Thông tư số 28/2015/TT-BLĐTBXH hướng dẫn Nghị định số 28/2015/NĐ-CP ngày 12
 tháng 3 năm 2015 của Chính phủ quy định về bảo hiểm thất nghiệp, từ ngày 1 tháng 1 năm
 2009, MB có nghĩa vụ đóng bảo hiểm thất nghiệp với mức bằng 1% quỹ tiền lương, tiền công
-đóng bảo hiểm thất",,,,,
+đóng bảo hiểm thất",1,1,1,1,,1,text chunk khớp trang OCR 29; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,C,3,mbb-bctc-hn-q3-2026:p024:para1000:001,mbb-bctc-hn-q3-2026,24,tm_dac_diem_chinh_sach_ke_toan,,"1 năm:
 Đối với các nghiệp vụ bảo hiểm phi nhân thọ: Dự phòng phi chưa được hưởng sẽ được
 tính theo công thức sau:
 Phí bảo hiểm x Số ngày bảo hiểm còn lại của hợp đồng
 Dự phòng phí chưa | bảo hiểm, tái bảo hiểm
 được hưởng | Tổng số ngày bảo hiểm theo hợp đồng bảo hiểm, tái bảo
-hiễm",,,,,
+hiễm",1,1,1,1,,1,text chunk khớp trang OCR 24; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,A,1,mbb-bctc-hn-q3-2026:p021:fixed500o50:002,mbb-bctc-hn-q3-2026,21,tm_dac_diem_chinh_sach_ke_toan,,"g đến dưới một (01) năm | 30%
 Từ một (01) năm đến dưới hai (02) năm | 50%
 Từ hai (02) năm đến dưới ba (03) năm | 70%
 Từ ba (03) năm trở lên | 100%
 18. Chi phí trả trước và chi phí chờ phân bổ
 Chi phí trả trước bao gồm các chi phí trả trước ngắn hạn hoặc chi phí trả trước dài hạn trên
-Báo cáo tình hì",,,,,
+Báo cáo tình hì",1,1,1,1,,1,text chunk khớp trang OCR 21; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,A,2,mbb-bctc-hn-q3-2026:p021:fixed500o50:005,mbb-bctc-hn-q3-2026,21,tm_dac_diem_chinh_sach_ke_toan,,"doanh thấp hơn giá trị hợp lý của tài sản thuần của bên bị mua, phần
 chênh lệch đó sẽ được ghi nhận vào Báo cáo kết quả hoạt động hợp nhất. Sau ghi nhận ban
 đầu, lợi thế thương mại được xác định giá trị bằng nguyên giá trừ đi giá trị phân bố lũy kế. Lợi
-thế thương mại được phân bổ theo phương pháp đ",,,,,
+thế thương mại được phân bổ theo phương pháp đ",1,1,1,1,,1,text chunk khớp trang OCR 21; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,A,3,mbb-bctc-hn-q3-2026:p021:fixed500o50:003,mbb-bctc-hn-q3-2026,21,tm_dac_diem_chinh_sach_ke_toan,,". Hợp nhất kinh doanh và lợi thế thương mại
 Hợp nhất kinh doanh được hạch toán theo phương pháp giả mua. Giả phi hợp nhất kinh doanh
 bao gồm giá trị hợp lý tại ngày diễn ra trao đổi của các tài sản đem trao đổi, các khoản nợ phải
-trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do bên mua phát ",,,,,
+trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do bên mua phát ",1,1,1,1,,1,text chunk khớp trang OCR 21; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,B,1,mbb-bctc-hn-q3-2026:p021:para1000:003,mbb-bctc-hn-q3-2026,21,tm_dac_diem_chinh_sach_ke_toan,,"Nếu giá phí hợp nhất kinh doanh thấp hơn giá trị hợp lý của tài sản thuần của bên bị mua, phần
 chênh lệch đó sẽ được ghi nhận vào Báo cáo kết quả hoạt động hợp nhất. Sau ghi nhận ban
 đầu, lợi thế thương mại được xác định giá trị bằng nguyên giá trừ đi giá trị phân bố lũy kế. Lợi
-thế thương mại được ",,,,,
+thế thương mại được ",1,1,1,1,,1,text chunk khớp trang OCR 21; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,B,2,mbb-bctc-hn-q3-2026:p021:para1000:002,mbb-bctc-hn-q3-2026,21,tm_dac_diem_chinh_sach_ke_toan,,"19. Hợp nhất kinh doanh và lợi thế thương mại
 Hợp nhất kinh doanh được hạch toán theo phương pháp giả mua. Giả phi hợp nhất kinh doanh
 bao gồm giá trị hợp lý tại ngày diễn ra trao đổi của các tài sản đem trao đổi, các khoản nợ phải
-trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do bên mua phá",,,,,
+trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do bên mua phá",1,1,1,1,,1,text chunk khớp trang OCR 21; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,B,3,mbb-bctc-hn-q3-2026:p018:para1000:001,mbb-bctc-hn-q3-2026,18,tm_dac_diem_chinh_sach_ke_toan,,"Thu nhập từ lãi của chứng khoán nợ kinh doanh trong thời gian nắm giữ được ghi nhận vào
 báo cáo kết quả hoạt động hợp nhất khi nhận được. Chứng khoán kinh doanh được dừng
 ghi nhận khi các quyền lợi nhận các luồng tiền từ các chứng khoản này đã chấm dứt hoặc
-Ngân hàng đã chuyển phần lớn rủi ro và lợi",,,,,
+Ngân hàng đã chuyển phần lớn rủi ro và lợi",1,1,1,1,,1,text chunk khớp trang OCR 18; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,C,1,mbb-bctc-hn-q3-2026:p021:para1000:003,mbb-bctc-hn-q3-2026,21,tm_dac_diem_chinh_sach_ke_toan,,"Nếu giá phí hợp nhất kinh doanh thấp hơn giá trị hợp lý của tài sản thuần của bên bị mua, phần
 chênh lệch đó sẽ được ghi nhận vào Báo cáo kết quả hoạt động hợp nhất. Sau ghi nhận ban
 đầu, lợi thế thương mại được xác định giá trị bằng nguyên giá trừ đi giá trị phân bố lũy kế. Lợi
-thế thương mại được ",,,,,
+thế thương mại được ",1,1,1,1,,1,text chunk khớp trang OCR 21; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,C,2,mbb-bctc-hn-q3-2026:p021:para1000:002,mbb-bctc-hn-q3-2026,21,tm_dac_diem_chinh_sach_ke_toan,,"19. Hợp nhất kinh doanh và lợi thế thương mại
 Hợp nhất kinh doanh được hạch toán theo phương pháp giả mua. Giả phi hợp nhất kinh doanh
 bao gồm giá trị hợp lý tại ngày diễn ra trao đổi của các tài sản đem trao đổi, các khoản nợ phải
-trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do bên mua phá",,,,,
+trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do bên mua phá",1,1,1,1,,1,text chunk khớp trang OCR 21; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,C,3,mbb-bctc-hn-q3-2026:p018:para1000:001,mbb-bctc-hn-q3-2026,18,tm_dac_diem_chinh_sach_ke_toan,,"Thu nhập từ lãi của chứng khoán nợ kinh doanh trong thời gian nắm giữ được ghi nhận vào
 báo cáo kết quả hoạt động hợp nhất khi nhận được. Chứng khoán kinh doanh được dừng
 ghi nhận khi các quyền lợi nhận các luồng tiền từ các chứng khoản này đã chấm dứt hoặc
-Ngân hàng đã chuyển phần lớn rủi ro và lợi",,,,,
+Ngân hàng đã chuyển phần lớn rủi ro và lợi",1,1,1,1,,1,text chunk khớp trang OCR 18; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,A,1,mbb-bctc-hn-q3-2026:p017:fixed500o50:002,mbb-bctc-hn-q3-2026,17,tm_dac_diem_chinh_sach_ke_toan,,"thì số tiền bán khoản nợ được hạch toán vào thu nhập khác của MB.
 Việc phân loại nợ và trích lập dự phòng cho các khoản nợ đã bán (trừ khoản nợ đã được
 sử dụng dự phòng để xử lý rủi ro) những chưa thu được đầy đủ tiền bán nợ được thực
-hiện tương tự như các khoản cho vay khách hàng khác được trình bà",,,,,
+hiện tương tự như các khoản cho vay khách hàng khác được trình bà",1,1,1,1,,1,text chunk khớp trang OCR 17; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,A,2,mbb-bctc-hn-q3-2026:p016:fixed500o50:003,mbb-bctc-hn-q3-2026,16,tm_dac_diem_chinh_sach_ke_toan,,"tại thời điểm mua, bán nợ đối với khoản
 nợ đã xuất toán ra khỏi Báo cáo tình hình tài chính.
 Giá mua, bán nợ là số tiền bên mua nợ phải thanh toán cho bên bán nợ theo hợp đồng
 mua, bán nợ.
 Hoạt động mua nợ
 Đối với các khoản nợ được mua, MB phân loại số tiền đã thanh toán để mua nợ vào nhóm có
-mức độ",,,,,
+mức độ",1,1,1,1,,1,text chunk khớp trang OCR 16; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,A,3,mbb-bctc-hn-q3-2026:p016:fixed500o50:004,mbb-bctc-hn-q3-2026,16,tm_dac_diem_chinh_sach_ke_toan,,"n tương tự như các
 khoản cho vay khách hàng khác được trình bày tại Thuyết minh 9.
 Giá mua khoản nợ theo hợp đồng được hạch toán trong nội bảng.
 Giá trị nợ gốc, lãi của khoản nợ đã mua được theo dõi ngoài ngoại bảng.
-Nếu thu được tiền lãi của khoản nợ bao gồm cả tiền lãi từ trước khi MB mua khoản nợ",,,,,
+Nếu thu được tiền lãi của khoản nợ bao gồm cả tiền lãi từ trước khi MB mua khoản nợ",1,1,1,1,,1,text chunk khớp trang OCR 16; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,B,1,mbb-bctc-hn-q3-2026:p016:para1000:002,mbb-bctc-hn-q3-2026,16,tm_dac_diem_chinh_sach_ke_toan,,"Hoạt động mua nợ
 Đối với các khoản nợ được mua, MB phân loại số tiền đã thanh toán để mua nợ vào nhóm có
 mức độ rủi ro không thấp hơn nhóm mà khoản nợ đó đã được phân loại trước khi mua. Việc
 phân loại nợ và trích lập dự phòng cho các khoản mua nợ được thực hiện tương tự như các
-khoản cho vay khách ",,,,,
+khoản cho vay khách ",1,1,1,1,,1,text chunk khớp trang OCR 16; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,B,2,mbb-bctc-hn-q3-2026:p015:para1000:002,mbb-bctc-hn-q3-2026,15,tm_dac_diem_chinh_sach_ke_toan,,"hoặc
 (i) Nợ được phân loại vào nhóm 5 theo quy định tại khoản 3
 Điều 10 Thông tư 31.
@@ -117,18 +117,18 @@ t03,B,2,mbb-bctc-hn-q3-2026:p015:para1000:002,mbb-bctc-hn-q3-2026,15,tm_dac_diem
 khoản 4 Điều 8 Thông tư 31.
 Cơ sở xác định giá trị và giá trị khấu trừ của từng loại tài sản bảo đảm được quy định trong
 Nghị định 86/2024,
-Ngoài ra, MB trích",,,,,
+Ngoài ra, MB trích",1,1,1,1,,1,text chunk khớp trang OCR 15; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,B,3,mbb-bctc-hn-q3-2026:p017:para1000:000,mbb-bctc-hn-q3-2026,17,tm_dac_diem_chinh_sach_ke_toan,,"Hoạt động bán nợ
 Doanh thu và chi phí bản nợ được ghi nhận theo Thông tư số 09/2015 và Thông tư 18/2022.
 Theo hướng dẫn, phần chênh lệch giữa giá mua, bán nợ và giá trị ghi sổ khoản nợ của bên
 bán nợ được xử lý như sau:
 Đối với các khoản nợ đang được hạch toán nội bảng:
-Trường hợp giá bán cao hơn gi",,,,,
+Trường hợp giá bán cao hơn gi",1,1,1,1,,1,text chunk khớp trang OCR 17; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,C,1,mbb-bctc-hn-q3-2026:p016:para1000:002,mbb-bctc-hn-q3-2026,16,tm_dac_diem_chinh_sach_ke_toan,,"Hoạt động mua nợ
 Đối với các khoản nợ được mua, MB phân loại số tiền đã thanh toán để mua nợ vào nhóm có
 mức độ rủi ro không thấp hơn nhóm mà khoản nợ đó đã được phân loại trước khi mua. Việc
 phân loại nợ và trích lập dự phòng cho các khoản mua nợ được thực hiện tương tự như các
-khoản cho vay khách ",,,,,
+khoản cho vay khách ",1,1,1,1,,1,text chunk khớp trang OCR 16; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,C,2,mbb-bctc-hn-q3-2026:p015:para1000:002,mbb-bctc-hn-q3-2026,15,tm_dac_diem_chinh_sach_ke_toan,,"hoặc
 (i) Nợ được phân loại vào nhóm 5 theo quy định tại khoản 3
 Điều 10 Thông tư 31.
@@ -136,35 +136,35 @@ t03,C,2,mbb-bctc-hn-q3-2026:p015:para1000:002,mbb-bctc-hn-q3-2026,15,tm_dac_diem
 khoản 4 Điều 8 Thông tư 31.
 Cơ sở xác định giá trị và giá trị khấu trừ của từng loại tài sản bảo đảm được quy định trong
 Nghị định 86/2024,
-Ngoài ra, MB trích",,,,,
+Ngoài ra, MB trích",1,1,1,1,,1,text chunk khớp trang OCR 15; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,C,3,mbb-bctc-hn-q3-2026:p017:para1000:000,mbb-bctc-hn-q3-2026,17,tm_dac_diem_chinh_sach_ke_toan,,"Hoạt động bán nợ
 Doanh thu và chi phí bản nợ được ghi nhận theo Thông tư số 09/2015 và Thông tư 18/2022.
 Theo hướng dẫn, phần chênh lệch giữa giá mua, bán nợ và giá trị ghi sổ khoản nợ của bên
 bán nợ được xử lý như sau:
 Đối với các khoản nợ đang được hạch toán nội bảng:
-Trường hợp giá bán cao hơn gi",,,,,
+Trường hợp giá bán cao hơn gi",1,1,1,1,,1,text chunk khớp trang OCR 17; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,A,1,mbb-bctc-hn-q3-2026:p025:fixed500o50:004,mbb-bctc-hn-q3-2026,25,tm_dac_diem_chinh_sach_ke_toan,,"rích lập các quỹ dự trữ bắt buộc trước khi
 phân phối lợi nhuận tương tự như Ngân hàng.
 Tổng Công ty Cổ phần Bảo hiểm Quân đội (“MIC”) và Công ty TNHH Bảo hiểm nhân thọ
 MB Ageas (""MBLife"")
 MIC và MBLife phải trích lập quỹ dự trữ bắt buộc từ lợi nhuận sau thuế theo tỷ lệ là 5% cho tới
-khi bằng 10% mức",,,,,
+khi bằng 10% mức",1,1,1,1,,1,text chunk khớp trang OCR 25; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,A,2,mbb-bctc-hn-q3-2026:p024:fixed500o50:005,mbb-bctc-hn-q3-2026,24,tm_dac_diem_chinh_sach_ke_toan,,"mức 100%
 mức phí giữ lại trong năm và được trích lập trên tỷ lệ phí bảo hiểm giữ lại theo quy định tại
 Thông tư 67/2023.
 Vào ngày 28 tháng 12 năm 2005, Bộ Tài Chính đã ban hành Quyết định số 100/2005/QĐ-BTC
 về việc ban hành bốn chuẩn mực kế toán (""CMKT”) mới, bao gồm Chuẩn mực kế toán số 19
-về Hợp đ",,,,,
+về Hợp đ",1,1,1,1,,1,text chunk khớp trang OCR 24; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,A,3,mbb-bctc-hn-q3-2026:p019:fixed500o50:000,mbb-bctc-hn-q3-2026,19,tm_dac_diem_chinh_sach_ke_toan,,"Chứng khoán giữ đến ngày đáo hạn được ghi nhận và đo lường tương tự như chứng khoán
 đầu tư sẵn sàng để bán được trình bày tại Thuyết minh số 12.1,
 13. Đầu tư dài hạn khác
 Các khoản đầu tư, góp vốn dài hạn khác thể hiện các khoản đầu tư vốn vào các đơn vị khác
-mà MB có tối đa 11% quyền biểu quyết và ",,,,,
+mà MB có tối đa 11% quyền biểu quyết và ",1,1,1,1,,1,text chunk khớp trang OCR 19; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,B,1,mbb-bctc-hn-q3-2026:p025:para1000:003,mbb-bctc-hn-q3-2026,25,tm_dac_diem_chinh_sach_ke_toan,,"MB AMC thực hiện trích lập quỹ khen thưởng phúc lợi theo quyết định của chủ sở hữu.
 Các quỹ khác của MBS và MB Capital được trích lập theo Nghị quyết của Đại hội đồng Cổ
 đông.
 Công ty Tài chính Tín dụng Tiêu dùng TNHH MB Shinsei (“MCredit”)
-Theo Nghị định số 93/2017/NĐ-CP, MCredit phải trích lập các",,,,,
+Theo Nghị định số 93/2017/NĐ-CP, MCredit phải trích lập các",1,1,1,1,,1,text chunk khớp trang OCR 25; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,B,2,mbb-bctc-hn-q3-2026:p031:para1000:002,mbb-bctc-hn-q3-2026,31,tm_bo_sung_tinh_hinh_tai_chinh,,"30/09/2026 | 31/12/2025
 Triệu đồng | Triệu đồng
 Dư nợ cho vay
@@ -173,17 +173,17 @@ Nợ đủ tiêu chuẩn | 1.249.640.585 | 1.059.781.834
 Nợ cần chú ý | 17.013.532 | 10.210.040
 Nợ dưới tiêu chuẩn | 7.230.947 | 3.276.216
 Nợ nghi ngờ | 4.778.315 | 4.330.016
-Nợ có kh",,,,,
+Nợ có kh",1,1,1,1,,1,text chunk khớp trang OCR 31; section 'tm_bo_sung_tinh_hinh_tai_chinh' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,B,3,mbb-bctc-hn-q3-2026:p010:para1000:001,mbb-bctc-hn-q3-2026,10,tm_dac_diem_chinh_sach_ke_toan,,"Công ty Cổ phần Chứng 116/GP-UBCK ngày 9 tháng 12 năm Môi giới, đầu tư và kinh | 66,40%
 khoán MB (""MBS”) | 2013 do Ủy ban Chứng khoán Nhà | doanh chứng khoán
 nước cấp lần đầu
 Công ty Cổ phần Quản | 21/UBCK-GPĐCQLQ ngày 15 tháng | Quản lý quỹ đầu tư | 90,77%
-lý Quỹ Đầu tư MB (MB | 11 năm 2007 do Ủy B",,,,,
+lý Quỹ Đầu tư MB (MB | 11 năm 2007 do Ủy B",1,1,1,1,,1,text chunk khớp trang OCR 10; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,C,1,mbb-bctc-hn-q3-2026:p025:para1000:003,mbb-bctc-hn-q3-2026,25,tm_dac_diem_chinh_sach_ke_toan,,"MB AMC thực hiện trích lập quỹ khen thưởng phúc lợi theo quyết định của chủ sở hữu.
 Các quỹ khác của MBS và MB Capital được trích lập theo Nghị quyết của Đại hội đồng Cổ
 đông.
 Công ty Tài chính Tín dụng Tiêu dùng TNHH MB Shinsei (“MCredit”)
-Theo Nghị định số 93/2017/NĐ-CP, MCredit phải trích lập các",,,,,
+Theo Nghị định số 93/2017/NĐ-CP, MCredit phải trích lập các",1,1,1,1,,1,text chunk khớp trang OCR 25; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,C,2,mbb-bctc-hn-q3-2026:p031:para1000:002,mbb-bctc-hn-q3-2026,31,tm_bo_sung_tinh_hinh_tai_chinh,,"30/09/2026 | 31/12/2025
 Triệu đồng | Triệu đồng
 Dư nợ cho vay
@@ -192,37 +192,37 @@ Nợ đủ tiêu chuẩn | 1.249.640.585 | 1.059.781.834
 Nợ cần chú ý | 17.013.532 | 10.210.040
 Nợ dưới tiêu chuẩn | 7.230.947 | 3.276.216
 Nợ nghi ngờ | 4.778.315 | 4.330.016
-Nợ có kh",,,,,
+Nợ có kh",1,1,1,1,,1,text chunk khớp trang OCR 31; section 'tm_bo_sung_tinh_hinh_tai_chinh' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,C,3,mbb-bctc-hn-q3-2026:p010:para1000:001,mbb-bctc-hn-q3-2026,10,tm_dac_diem_chinh_sach_ke_toan,,"Công ty Cổ phần Chứng 116/GP-UBCK ngày 9 tháng 12 năm Môi giới, đầu tư và kinh | 66,40%
 khoán MB (""MBS”) | 2013 do Ủy ban Chứng khoán Nhà | doanh chứng khoán
 nước cấp lần đầu
 Công ty Cổ phần Quản | 21/UBCK-GPĐCQLQ ngày 15 tháng | Quản lý quỹ đầu tư | 90,77%
-lý Quỹ Đầu tư MB (MB | 11 năm 2007 do Ủy B",,,,,
+lý Quỹ Đầu tư MB (MB | 11 năm 2007 do Ủy B",1,1,1,1,,1,text chunk khớp trang OCR 10; section 'tm_dac_diem_chinh_sach_ke_toan' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,A,1,mbb-bctc-hn-q3-2026:p050:fixed500o50:002,mbb-bctc-hn-q3-2026,50,tm_bo_sung_ket_qua_hoat_dong,,"uế TNDN ước tính tại Việt
 Nam | 27.918.151 | 20.704.046
 Chi phí thuế TNDN hiện hành riêng Ngân hàng (i) | 5.583.630 | 4.482.665
 Điều chỉnh trong năm cho thuế thu nhập hiện
 hành của các năm trước (ii) | 4.223 | 14.599
 Chi phí thuế TNDN chi nhánh nước ngoài (iii) | 1.113 | 4.297
-Chi phí thuế TNDN của ",,,,,
+Chi phí thuế TNDN của ",1,1,1,1,,1,text chunk khớp trang OCR 50; section 'tm_bo_sung_ket_qua_hoat_dong' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,A,2,mbb-bctc-hn-q3-2026:p004:fixed500o50:001,mbb-bctc-hn-q3-2026,4,bc_tinh_hinh_tai_chinh,,"697.387 | 698.507
 Vốn tài trợ, ủy thác đầu tư, cho vay TCTD chịu rủi ro | III.19 | 2.139.069 | 3.912.833
 Phát hành giấy tờ có giá | III.20 | 302.399.200 | 187.236.104
 Các khoản nợ khác | 70.788.468 | 65.033.537
 Các khoản lãi, phí phải trả | 22.754.159 | 13.245.868
 Thuế TNDN hoãn lại phải trả
-Các kho",,,,,
+Các kho",1,1,1,1,,1,text chunk khớp trang OCR 4; section 'bc_tinh_hinh_tai_chinh' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,A,3,mbb-bctc-hn-q3-2026:p050:fixed500o50:003,mbb-bctc-hn-q3-2026,50,tm_bo_sung_ket_qua_hoat_dong,,") | (6.026) | 985
 Chi phí thuế TNDN (i+i+iji+iv+y+vi) | 6.118.292 | 4.659.210
 12. Tiền và các khoản tương đương tiền
 Tiền và các khoản tương đương tiền thuần thể hiện trên báo cáo lưu chuyển tiền tệ hợp nhất
 bao gồm các khoản trên Báo cáo tình hình tài chính hợp nhất sau đây:
-30/09/2026 | 31/12/2025",,,,,
+30/09/2026 | 31/12/2025",1,1,1,1,,1,text chunk khớp trang OCR 50; section 'tm_bo_sung_ket_qua_hoat_dong' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,B,1,mbb-bctc-hn-q3-2026:p007:para1000:002,mbb-bctc-hn-q3-2026,7,bc_luu_chuyen_tien_te,,"Những thay đổi về công nợ hoạt động | 182.238.796 | 173.534.073
 Tăng/(Giảm) các khoản nợ Chính phủ và NHNN | (9.619.122) | 14.999.043
 Tăng/(Giảm) các khoản tiền gửi, tiền vay các TCTD khác | 17.830.511 | 44.155.785
 |Tăng/(Giảm) tiền gửi của khách hàng | 72.619.910 | 73.875.849
-||Tăng/(Giảm) phát hàn",,,,,
+||Tăng/(Giảm) phát hàn",1,1,1,1,,1,text chunk khớp trang OCR 7; section 'bc_luu_chuyen_tien_te' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,B,2,mbb-bctc-hn-q3-2026:p050:para1000:001,mbb-bctc-hn-q3-2026,50,tm_bo_sung_ket_qua_hoat_dong,,"11.2 Thuế thu nhập doanh nghiệp
 Ngân hàng có nghĩa vụ nộp thuế thu nhập doanh nghiệp 20% trên thu nhập chịu thuế,
 30/09/2026 | 30/09/2025
@@ -230,12 +230,12 @@ Triệu đồng | Triệu đồng
 Tổng lợi nhuận theo kế toán trước thuế hợp
 nhất | 30.518.358 | 23.139.236
 Điều chỉnh cho các khoản:
-Thư nhập không chịu thuế (bao gồm cổ t",,,,,
+Thư nhập không chịu thuế (bao gồm cổ t",1,1,1,1,,1,text chunk khớp trang OCR 50; section 'tm_bo_sung_ket_qua_hoat_dong' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,B,3,mbb-bctc-hn-q3-2026:p050:para1000:002,mbb-bctc-hn-q3-2026,50,tm_bo_sung_ket_qua_hoat_dong,,"Chi phí/(hoàn nhập) thuế TNDN hoãn lại (vi) | (6.026) | 985
 Chi phí thuế TNDN (i+i+iji+iv+y+vi) | 6.118.292 | 4.659.210
 12. Tiền và các khoản tương đương tiền
 Tiền và các khoản tương đương tiền thuần thể hiện trên báo cáo lưu chuyển tiền tệ hợp nhất
-bao gồm các khoản trên Báo cáo tình hình tài chính",,,,,
+bao gồm các khoản trên Báo cáo tình hình tài chính",1,1,1,1,,1,text chunk khớp trang OCR 50; section 'tm_bo_sung_ket_qua_hoat_dong' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,C,1,mbb-bctc-hn-q3-2026:p050:para1000:001,mbb-bctc-hn-q3-2026,50,tm_bo_sung_ket_qua_hoat_dong,tm_bo_sung_ket_qua_hoat_dong,"11.2 Thuế thu nhập doanh nghiệp
 Ngân hàng có nghĩa vụ nộp thuế thu nhập doanh nghiệp 20% trên thu nhập chịu thuế,
 30/09/2026 | 30/09/2025
@@ -243,25 +243,25 @@ Triệu đồng | Triệu đồng
 Tổng lợi nhuận theo kế toán trước thuế hợp
 nhất | 30.518.358 | 23.139.236
 Điều chỉnh cho các khoản:
-Thư nhập không chịu thuế (bao gồm cổ t",,,,,
+Thư nhập không chịu thuế (bao gồm cổ t",1,1,1,1,,1,text chunk khớp trang OCR 50; section 'tm_bo_sung_ket_qua_hoat_dong' đúng dải trang manifest; source đúng; tuân thủ filter,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,C,2,mbb-bctc-hn-q3-2026:p050:para1000:002,mbb-bctc-hn-q3-2026,50,tm_bo_sung_ket_qua_hoat_dong,tm_bo_sung_ket_qua_hoat_dong,"Chi phí/(hoàn nhập) thuế TNDN hoãn lại (vi) | (6.026) | 985
 Chi phí thuế TNDN (i+i+iji+iv+y+vi) | 6.118.292 | 4.659.210
 12. Tiền và các khoản tương đương tiền
 Tiền và các khoản tương đương tiền thuần thể hiện trên báo cáo lưu chuyển tiền tệ hợp nhất
-bao gồm các khoản trên Báo cáo tình hình tài chính",,,,,
+bao gồm các khoản trên Báo cáo tình hình tài chính",1,1,1,1,,1,text chunk khớp trang OCR 50; section 'tm_bo_sung_ket_qua_hoat_dong' đúng dải trang manifest; source đúng; tuân thủ filter,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,C,3,mbb-bctc-hn-q3-2026:p049:para1000:001,mbb-bctc-hn-q3-2026,49,tm_bo_sung_ket_qua_hoat_dong,tm_bo_sung_ket_qua_hoat_dong,"10. Tình hình thực hiện nghĩa vụ với NSNN
 Đơn vị: triệu đồng
 Só du | Phát sinh trong kỳ
 đầu kỳ | Số phải nộp | Số đã nộp Số dư cuối kỳ
 Thuế GTGT | 175.047 | 929.818 | (1.011.533) | 93.332
 Thuế TNDN | 3.897.818 | 6.109.257 | (7.885.447) | 2.121.628
-Các loại thuế khác | 145.394 | 1.826.424 | (1.614.17",,,,,
+Các loại thuế khác | 145.394 | 1.826.424 | (1.614.17",1,1,1,1,,1,text chunk khớp trang OCR 49; section 'tm_bo_sung_ket_qua_hoat_dong' đúng dải trang manifest; source đúng; tuân thủ filter,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,A,1,mbb-bctc-hn-q3-2026:p051:fixed500o50:005,mbb-bctc-hn-q3-2026,51,tm_thong_tin_khac,,"ch hàng.
 HAN
 Ngân hàng thường yêu cầu khách hàng ký quỹ để đảm bảo cho các công cụ tài chính có liên
 quan đến tín dụng khi cần thiết. Giá trị ký quỹ dao động từ 0% đến 100% giá trị cam kết được
 cấp, tùy thuộc vào mức độ tin cậy của khách hàng do Ngân hàng đánh giá.
-43",,,,,
+43",1,1,1,1,,1,text chunk khớp trang OCR 51; section 'tm_thong_tin_khac' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,A,2,mbb-bctc-hn-q3-2026:p051:fixed500o50:000,mbb-bctc-hn-q3-2026,51,tm_thong_tin_khac,,"V- CÁC THÔNG TIN KHÁC
 1. | Các cam kết ngoại bảng
 30/09/2026 | 31/12/2025
@@ -269,7 +269,7 @@ Chỉ tiêu | Triệu đồng | Triệu đồng
 Bảo lãnh vay vốn | 2.232.092 | 1.684.717
 Các cam kết giao dịch hối đoái | 741.843.792 | 618.888.427
 - Cam kết mua ngoại tệ | 2.193.395 | 9.738.358
-- Cam kết bán ngoại tệ | 1.778.466 | 8.752.3",,,,,
+- Cam kết bán ngoại tệ | 1.778.466 | 8.752.3",1,1,1,1,,1,text chunk khớp trang OCR 51; section 'tm_thong_tin_khac' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,A,3,mbb-bctc-hn-q3-2026:p031:fixed500o50:001,mbb-bctc-hn-q3-2026,31,tm_bo_sung_tinh_hinh_tai_chinh,,"/2025
 Triệu đồng | Triệu đồng
 Dư nợ cho vay
@@ -277,7 +277,7 @@ Cho vay các TCKT, cá nhân trong nước | 1.254.837.656 | 1.054.801.750
 Cho vay chiết khấu công cụ chuyển nhượng và các
 giấy tờ có giá | 2.769.882 | 3.007.877
 Các khoản trả thay khách hàng | 167.436 | 115.795
-Cho vay bằng vốn tài trợ, ủy thác đầu tư | 3.182 |",,,,,
+Cho vay bằng vốn tài trợ, ủy thác đầu tư | 3.182 |",1,1,1,1,,1,text chunk khớp trang OCR 31; section 'tm_bo_sung_tinh_hinh_tai_chinh' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,B,1,mbb-bctc-hn-q3-2026:p051:para1000:000,mbb-bctc-hn-q3-2026,51,tm_thong_tin_khac,,"V- CÁC THÔNG TIN KHÁC
 1. | Các cam kết ngoại bảng
 30/09/2026 | 31/12/2025
@@ -285,11 +285,11 @@ Chỉ tiêu | Triệu đồng | Triệu đồng
 Bảo lãnh vay vốn | 2.232.092 | 1.684.717
 Các cam kết giao dịch hối đoái | 741.843.792 | 618.888.427
 - Cam kết mua ngoại tệ | 2.193.395 | 9.738.358
-- Cam kết bán ngoại tệ | 1.778.466 | 8.752.3",,,,,
+- Cam kết bán ngoại tệ | 1.778.466 | 8.752.3",1,1,1,1,,1,text chunk khớp trang OCR 51; section 'tm_thong_tin_khac' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,B,2,mbb-bctc-hn-q3-2026:p051:para1000:002,mbb-bctc-hn-q3-2026,51,tm_thong_tin_khac,,"Giao dịch thư tín dụng trả chậm sẽ phát sinh rủi ro khi hợp đồng đã được thực hiện mà khách
 hàng không thanh toán cho bên thụ hưởng. Các thư tín dụng trả chậm không được khách hàng
 thanh toán được Ngân hàng ghi nhận là khoản cho vay bắt buộc và công nợ tương ứng thế
-hiện nghĩa vụ tài chính của Ngân ",,,,,
+hiện nghĩa vụ tài chính của Ngân ",1,1,1,1,,1,text chunk khớp trang OCR 51; section 'tm_thong_tin_khac' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,B,3,mbb-bctc-hn-q3-2026:p031:para1000:001,mbb-bctc-hn-q3-2026,31,tm_bo_sung_tinh_hinh_tai_chinh,,"5. | Cho vay khách hàng
 30/09/2026 | 31/12/2025
 Triệu đồng | Triệu đồng
@@ -298,7 +298,7 @@ Cho vay các TCKT, cá nhân trong nước | 1.254.837.656 | 1.054.801.750
 Cho vay chiết khấu công cụ chuyển nhượng và các
 giấy tờ có giá | 2.769.882 | 3.007.877
 Các khoản trả thay khách hàng | 167.436 | 115.795
-Cho vay ",,,,,
+Cho vay ",1,1,1,1,,1,text chunk khớp trang OCR 31; section 'tm_bo_sung_tinh_hinh_tai_chinh' đúng dải trang manifest; source đúng,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,C,1,mbb-bctc-hn-q3-2026:p051:para1000:000,mbb-bctc-hn-q3-2026,51,tm_thong_tin_khac,tm_thong_tin_khac,"V- CÁC THÔNG TIN KHÁC
 1. | Các cam kết ngoại bảng
 30/09/2026 | 31/12/2025
@@ -306,12 +306,12 @@ Chỉ tiêu | Triệu đồng | Triệu đồng
 Bảo lãnh vay vốn | 2.232.092 | 1.684.717
 Các cam kết giao dịch hối đoái | 741.843.792 | 618.888.427
 - Cam kết mua ngoại tệ | 2.193.395 | 9.738.358
-- Cam kết bán ngoại tệ | 1.778.466 | 8.752.3",,,,,
+- Cam kết bán ngoại tệ | 1.778.466 | 8.752.3",1,1,1,1,,1,text chunk khớp trang OCR 51; section 'tm_thong_tin_khac' đúng dải trang manifest; source đúng; tuân thủ filter,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,C,2,mbb-bctc-hn-q3-2026:p051:para1000:002,mbb-bctc-hn-q3-2026,51,tm_thong_tin_khac,tm_thong_tin_khac,"Giao dịch thư tín dụng trả chậm sẽ phát sinh rủi ro khi hợp đồng đã được thực hiện mà khách
 hàng không thanh toán cho bên thụ hưởng. Các thư tín dụng trả chậm không được khách hàng
 thanh toán được Ngân hàng ghi nhận là khoản cho vay bắt buộc và công nợ tương ứng thế
-hiện nghĩa vụ tài chính của Ngân ",,,,,
+hiện nghĩa vụ tài chính của Ngân ",1,1,1,1,,1,text chunk khớp trang OCR 51; section 'tm_thong_tin_khac' đúng dải trang manifest; source đúng; tuân thủ filter,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,C,3,mbb-bctc-hn-q3-2026:p059:para1000:002,mbb-bctc-hn-q3-2026,59,tm_thong_tin_khac,tm_thong_tin_khac,"Bảng dưới đây trình bày phân tích tài sản và nợ phải trả của Ngân hàng theo các nhóm kỳ đảo
 hạn tương ứng tính theo thời hạn còn lại từ ngày kết thúc năm tài chính đến ngày phải thanh
 toán. Trong thực tế, kỳ đáo hạn thực tế của tài sản và nợ phải trả có thể khác thời hạn theo
-hợp đồng theo phụ lục h",,,,,
+hợp đồng theo phụ lục h",1,1,1,1,,1,text chunk khớp trang OCR 59; section 'tm_thong_tin_khac' đúng dải trang manifest; source đúng; tuân thủ filter,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14

@@ -1,4 +1,4 @@
-﻿question_id,strategy,question,expected_answer,applied_filter,top3_text,label_0_2,reason
+﻿question_id,strategy,question,expected_answer,applied_filter,top3_text,label_0_2,reason,ai_suggestion,ai_reason,label_source
 t01,A,MB đóng bảo hiểm xã hội và bảo hiểm tai nạn lao động cho nhân viên theo tỷ lệ nào?,"Lần lượt 17% và 0,5% lương cơ bản hàng tháng.",,"[#1 tr.28 tm_dac_diem_chinh_sach_ke_toan]
 hành trong kỳ được trình bày trên báo cáo tài chính hợp nhất, dẫn đến điều
 chỉnh tương ứng của chỉ tiêu lãi cơ bản trên cổ phiếu.
@@ -24,7 +24,7 @@ sắt và đường hàng không: bằng 25% tổng phí bảo hiểm thuộc n�
 tài chính của nghiệp vụ bảo hiểm này.
 Đối với các nghiệp vụ bảo hiểm phi nhân thọ khác: bằng 50% tổng phí bảo hiểm thuộc
 năm tài chính của nghiệp vụ bảo hiểm này.
-15",,
+15",2,"#1 (tr.28) chứa trọn '17% và 0,5% lương cơ bản hàng tháng' kèm chủ thể MB và mục Trợ cấp nghỉ hưu.",2,"#1 (tr.28) chứa trọn '17% và 0,5% lương cơ bản hàng tháng' kèm chủ thể MB và mục Trợ cấp nghỉ hưu.",AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,B,MB đóng bảo hiểm xã hội và bảo hiểm tai nạn lao động cho nhân viên theo tỷ lệ nào?,"Lần lượt 17% và 0,5% lương cơ bản hàng tháng.",,"[#1 tr.28 tm_dac_diem_chinh_sach_ke_toan]
 33. Lợi ích của nhân viên
 a. | Trợ cấp nghỉ hưu
@@ -57,7 +57,7 @@ tính theo công thức sau:
 Phí bảo hiểm x Số ngày bảo hiểm còn lại của hợp đồng
 Dự phòng phí chưa | bảo hiểm, tái bảo hiểm
 được hưởng | Tổng số ngày bảo hiểm theo hợp đồng bảo hiểm, tái bảo
-hiễm",,
+hiễm",2,#1 (tr.28) chứa trọn evidence kèm tiêu đề '33. Lợi ích của nhân viên'.,2,#1 (tr.28) chứa trọn evidence kèm tiêu đề '33. Lợi ích của nhân viên'.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t01,C,MB đóng bảo hiểm xã hội và bảo hiểm tai nạn lao động cho nhân viên theo tỷ lệ nào?,"Lần lượt 17% và 0,5% lương cơ bản hàng tháng.",,"[#1 tr.28 tm_dac_diem_chinh_sach_ke_toan]
 33. Lợi ích của nhân viên
 a. | Trợ cấp nghỉ hưu
@@ -90,7 +90,7 @@ tính theo công thức sau:
 Phí bảo hiểm x Số ngày bảo hiểm còn lại của hợp đồng
 Dự phòng phí chưa | bảo hiểm, tái bảo hiểm
 được hưởng | Tổng số ngày bảo hiểm theo hợp đồng bảo hiểm, tái bảo
-hiễm",,
+hiễm",2,Giống B (không có filter).,2,Giống B (không có filter).,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,A,Lợi thế thương mại từ hợp nhất kinh doanh được phân bổ trong bao lâu?,Phân bổ theo đường thẳng trong 10 năm.,,"[#1 tr.21 tm_dac_diem_chinh_sach_ke_toan]
 g đến dưới một (01) năm | 30%
 Từ một (01) năm đến dưới hai (02) năm | 50%
@@ -119,7 +119,7 @@ Hợp nhất kinh doanh được hạch toán theo phương pháp giả mua. Gi�
 bao gồm giá trị hợp lý tại ngày diễn ra trao đổi của các tài sản đem trao đổi, các khoản nợ phải
 trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do bên mua phát hành để đổi lấy quyền
 kiểm soát bên bị mua và các chi phí liên quan trực tiếp đến việc hợp nhất kinh doanh. Tài sản,
-nợ phải trả có thể xác định được và những khoản nợ tiềm tàng phải gánh chịu trong h",,
+nợ phải trả có thể xác định được và những khoản nợ tiềm tàng phải gánh chịu trong h",2,#2 (tr.21) chứa câu phân bổ lợi thế thương mại theo đường thẳng 10 năm.,2,#2 (tr.21) chứa câu phân bổ lợi thế thương mại theo đường thẳng 10 năm.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,B,Lợi thế thương mại từ hợp nhất kinh doanh được phân bổ trong bao lâu?,Phân bổ theo đường thẳng trong 10 năm.,,"[#1 tr.21 tm_dac_diem_chinh_sach_ke_toan]
 Nếu giá phí hợp nhất kinh doanh thấp hơn giá trị hợp lý của tài sản thuần của bên bị mua, phần
 chênh lệch đó sẽ được ghi nhận vào Báo cáo kết quả hoạt động hợp nhất. Sau ghi nhận ban
@@ -143,7 +143,7 @@ trị hợp lý của tài sản, nợ phải trả có thể xác định đư�
 Thu nhập từ lãi của chứng khoán nợ kinh doanh trong thời gian nắm giữ được ghi nhận vào
 báo cáo kết quả hoạt động hợp nhất khi nhận được. Chứng khoán kinh doanh được dừng
 ghi nhận khi các quyền lợi nhận các luồng tiền từ các chứng khoản này đã chấm dứt hoặc
-Ngân hàng đã chuyển phần lớn rủi ro và lợi ích của việc sở hữu các chứng khoán này.",,
+Ngân hàng đã chuyển phần lớn rủi ro và lợi ích của việc sở hữu các chứng khoán này.",2,#1 (tr.21) chứa trọn câu; #2 là đoạn định nghĩa hợp nhất kinh doanh cùng mục.,2,#1 (tr.21) chứa trọn câu; #2 là đoạn định nghĩa hợp nhất kinh doanh cùng mục.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t02,C,Lợi thế thương mại từ hợp nhất kinh doanh được phân bổ trong bao lâu?,Phân bổ theo đường thẳng trong 10 năm.,,"[#1 tr.21 tm_dac_diem_chinh_sach_ke_toan]
 Nếu giá phí hợp nhất kinh doanh thấp hơn giá trị hợp lý của tài sản thuần của bên bị mua, phần
 chênh lệch đó sẽ được ghi nhận vào Báo cáo kết quả hoạt động hợp nhất. Sau ghi nhận ban
@@ -167,7 +167,7 @@ trị hợp lý của tài sản, nợ phải trả có thể xác định đư�
 Thu nhập từ lãi của chứng khoán nợ kinh doanh trong thời gian nắm giữ được ghi nhận vào
 báo cáo kết quả hoạt động hợp nhất khi nhận được. Chứng khoán kinh doanh được dừng
 ghi nhận khi các quyền lợi nhận các luồng tiền từ các chứng khoản này đã chấm dứt hoặc
-Ngân hàng đã chuyển phần lớn rủi ro và lợi ích của việc sở hữu các chứng khoán này.",,
+Ngân hàng đã chuyển phần lớn rủi ro và lợi ích của việc sở hữu các chứng khoán này.",2,Giống B (không có filter).,2,Giống B (không có filter).,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,A,"Khi mua một khoản nợ, MB phân loại số tiền đã trả vào nhóm nợ nào?",Nhóm có mức độ rủi ro không thấp hơn nhóm của khoản nợ trước khi mua.,,"[#1 tr.17 tm_dac_diem_chinh_sach_ke_toan]
 thì số tiền bán khoản nợ được hạch toán vào thu nhập khác của MB.
 Việc phân loại nợ và trích lập dự phòng cho các khoản nợ đã bán (trừ khoản nợ đã được
@@ -197,7 +197,7 @@ Nếu thu được tiền lãi của khoản nợ bao gồm cả tiền lãi t�
 đó, MB thực hiện phân bổ số tiền lãi theo nguyên tắc: (i) ghi giảm giá trị của khoản mua
 nợ số tiền lãi trước khi mua; (ii) ghi nhận là thu nhập số tiền lãi của kỳ sau khi MB mua
 no.
-8",,
+8",2,#2 (tr.16) chứa trọn quy tắc phân loại nợ mua vào nhóm rủi ro không thấp hơn.,2,#2 (tr.16) chứa trọn quy tắc phân loại nợ mua vào nhóm rủi ro không thấp hơn.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,B,"Khi mua một khoản nợ, MB phân loại số tiền đã trả vào nhóm nợ nào?",Nhóm có mức độ rủi ro không thấp hơn nhóm của khoản nợ trước khi mua.,,"[#1 tr.16 tm_dac_diem_chinh_sach_ke_toan]
 Hoạt động mua nợ
 Đối với các khoản nợ được mua, MB phân loại số tiền đã thanh toán để mua nợ vào nhóm có
@@ -247,7 +247,7 @@ xác định do cá nhân, tập thể gây ra và phải bồi thường theo q
 của tổ chức bảo hiểm và quỹ dự phòng rủi ro đã được trích lập chi phí trong năm,
 phần còn thiếu được hạch toán vào chi phí kinh doanh của MB trong năm.
 Đối với các khoản nợ đang theo dõi ngoại bảng, khoản nợ đã xuất toán ra khỏi Báo cáo
-tình hình tài chính, thì số tiền bán khoản nợ được hạch toán vào thu nhập khác của MB.",,
+tình hình tài chính, thì số tiền bán khoản nợ được hạch toán vào thu nhập khác của MB.",2,#1 (tr.16) có tiêu đề 'Hoạt động mua nợ' và trọn quy tắc.,2,#1 (tr.16) có tiêu đề 'Hoạt động mua nợ' và trọn quy tắc.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t03,C,"Khi mua một khoản nợ, MB phân loại số tiền đã trả vào nhóm nợ nào?",Nhóm có mức độ rủi ro không thấp hơn nhóm của khoản nợ trước khi mua.,,"[#1 tr.16 tm_dac_diem_chinh_sach_ke_toan]
 Hoạt động mua nợ
 Đối với các khoản nợ được mua, MB phân loại số tiền đã thanh toán để mua nợ vào nhóm có
@@ -297,7 +297,7 @@ xác định do cá nhân, tập thể gây ra và phải bồi thường theo q
 của tổ chức bảo hiểm và quỹ dự phòng rủi ro đã được trích lập chi phí trong năm,
 phần còn thiếu được hạch toán vào chi phí kinh doanh của MB trong năm.
 Đối với các khoản nợ đang theo dõi ngoại bảng, khoản nợ đã xuất toán ra khỏi Báo cáo
-tình hình tài chính, thì số tiền bán khoản nợ được hạch toán vào thu nhập khác của MB.",,
+tình hình tài chính, thì số tiền bán khoản nợ được hạch toán vào thu nhập khác của MB.",2,Giống B (không có filter).,2,Giống B (không có filter).,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,A,MIC và MBLife trích quỹ dự trữ bắt buộc theo tỷ lệ nào và đến khi nào thì dừng?,"5% lợi nhuận sau thuế, cho tới khi quỹ bằng 10% vốn điều lệ.",,"[#1 tr.25 tm_dac_diem_chinh_sach_ke_toan]
 rích lập các quỹ dự trữ bắt buộc trước khi
 phân phối lợi nhuận tương tự như Ngân hàng.
@@ -324,7 +324,7 @@ Chứng khoán giữ đến ngày đáo hạn được ghi nhận và đo lườ
 Các khoản đầu tư, góp vốn dài hạn khác thể hiện các khoản đầu tư vốn vào các đơn vị khác
 mà MB có tối đa 11% quyền biểu quyết và chưa niêm yết trên thị trường chứng khoán. Các
 khoản đầu tư này được ghi nhận theo giá gốc tại thời điểm đầu tư.
-Dự phòng giảm giả cho các khoản đầu tư dài hạn được lập trong trường hợp có bằng chứng",,
+Dự phòng giảm giả cho các khoản đầu tư dài hạn được lập trong trường hợp có bằng chứng",2,#1 (tr.25) có tiêu đề MIC/MBLife và trọn tỷ lệ 5% đến khi bằng 10% vốn điều lệ.,2,#1 (tr.25) có tiêu đề MIC/MBLife và trọn tỷ lệ 5% đến khi bằng 10% vốn điều lệ.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,B,MIC và MBLife trích quỹ dự trữ bắt buộc theo tỷ lệ nào và đến khi nào thì dừng?,"5% lợi nhuận sau thuế, cho tới khi quỹ bằng 10% vốn điều lệ.",,"[#1 tr.25 tm_dac_diem_chinh_sach_ke_toan]
 MB AMC thực hiện trích lập quỹ khen thưởng phúc lợi theo quyết định của chủ sở hữu.
 Các quỹ khác của MBS và MB Capital được trích lập theo Nghị quyết của Đại hội đồng Cổ
@@ -379,7 +379,7 @@ nhân thọ MB Ageas | 2016 do Bộ Tài Chính cấp lần đầu | hiểm liê
 đầu tư tài chính
 Tổng công ty Cổ phần | 43/GP/KDBH ngày 8 tháng 10 năm | Bảo hiểm phi nhân thọ | 67,68%
 Bảo hiểm Quân đội | 2007 do Bộ Tài Chính cấp lần đầu
-(""MIC"")",,
+(""MIC"")",2,#1 (tr.25) chứa trọn evidence kèm tên hai công ty.,2,#1 (tr.25) chứa trọn evidence kèm tên hai công ty.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t04,C,MIC và MBLife trích quỹ dự trữ bắt buộc theo tỷ lệ nào và đến khi nào thì dừng?,"5% lợi nhuận sau thuế, cho tới khi quỹ bằng 10% vốn điều lệ.",,"[#1 tr.25 tm_dac_diem_chinh_sach_ke_toan]
 MB AMC thực hiện trích lập quỹ khen thưởng phúc lợi theo quyết định của chủ sở hữu.
 Các quỹ khác của MBS và MB Capital được trích lập theo Nghị quyết của Đại hội đồng Cổ
@@ -434,7 +434,7 @@ nhân thọ MB Ageas | 2016 do Bộ Tài Chính cấp lần đầu | hiểm liê
 đầu tư tài chính
 Tổng công ty Cổ phần | 43/GP/KDBH ngày 8 tháng 10 năm | Bảo hiểm phi nhân thọ | 67,68%
 Bảo hiểm Quân đội | 2007 do Bộ Tài Chính cấp lần đầu
-(""MIC"")",,
+(""MIC"")",2,Giống B (không có filter).,2,Giống B (không có filter).,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,A,"Theo thuyết minh bổ sung cho báo cáo kết quả hoạt động, ngân hàng chịu thuế suất thuế TNDN bao nhiêu?",20% trên thu nhập chịu thuế.,,"[#1 tr.50 tm_bo_sung_ket_qua_hoat_dong]
 uế TNDN ước tính tại Việt
 Nam | 27.918.151 | 20.704.046
@@ -472,7 +472,7 @@ bao gồm các khoản trên Báo cáo tình hình tài chính hợp nhất sau 
 Triệu đồng | Triệu đồng
 Tiền và các khoản tương đương tiền tại quỹ | 4.844.018 | 4.965.786
 Tiền gửi tại Ngân hàng Nhà nước | 15.780.158 | 68.475.175
-Tiền gửi tại TCTD kỳ hạn gốc không quá 3 tháng | 1",,
+Tiền gửi tại TCTD kỳ hạn gốc không quá 3 tháng | 1",0,Top-3 chỉ có bảng tính chi phí thuế (tr.50) và bảng nợ phải trả (tr.4); không chunk nào nêu thuế suất 20%.,0,Top-3 chỉ có bảng tính chi phí thuế (tr.50) và bảng nợ phải trả (tr.4); không chunk nào nêu thuế suất 20%.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,B,"Theo thuyết minh bổ sung cho báo cáo kết quả hoạt động, ngân hàng chịu thuế suất thuế TNDN bao nhiêu?",20% trên thu nhập chịu thuế.,,"[#1 tr.7 bc_luu_chuyen_tien_te]
 Những thay đổi về công nợ hoạt động | 182.238.796 | 173.534.073
 Tăng/(Giảm) các khoản nợ Chính phủ và NHNN | (9.619.122) | 14.999.043
@@ -521,7 +521,7 @@ Tiền và các khoản tương đương tiền tại quỹ | 4.844.018 | 4.965.
 Tiền gửi tại Ngân hàng Nhà nước | 15.780.158 | 68.475.175
 Tiền gửi tại TCTD kỳ hạn gốc không quá 3 tháng | 158.920.903 | 165.819.028
 179.545.079 | 239.259.989
-42",,
+42",2,#2 (tr.50) có tiêu đề '11.2 Thuế thu nhập doanh nghiệp' và câu thuế suất 20%; #1 là báo cáo lưu chuyển tiền tệ không liên quan.,2,#2 (tr.50) có tiêu đề '11.2 Thuế thu nhập doanh nghiệp' và câu thuế suất 20%; #1 là báo cáo lưu chuyển tiền tệ không liên quan.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t05,C,"Theo thuyết minh bổ sung cho báo cáo kết quả hoạt động, ngân hàng chịu thuế suất thuế TNDN bao nhiêu?",20% trên thu nhập chịu thuế.,tm_bo_sung_ket_qua_hoat_dong,"[#1 tr.50 tm_bo_sung_ket_qua_hoat_dong]
 11.2 Thuế thu nhập doanh nghiệp
 Ngân hàng có nghĩa vụ nộp thuế thu nhập doanh nghiệp 20% trên thu nhập chịu thuế,
@@ -568,7 +568,7 @@ Thuế GTGT | 175.047 | 929.818 | (1.011.533) | 93.332
 Thuế TNDN | 3.897.818 | 6.109.257 | (7.885.447) | 2.121.628
 Các loại thuế khác | 145.394 | 1.826.424 | (1.614.176) | 357.642
 4.218.259 | 8.865.499 | (10.511.156) | 2.572.602
-41",,
+41",2,#1 (tr.50) chứa trọn câu thuế suất 20%; cả top-3 nằm trong section được lọc.,2,#1 (tr.50) chứa trọn câu thuế suất 20%; cả top-3 nằm trong section được lọc.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,A,"Trong phần cam kết ngoại bảng ở thuyết minh V, mức ký quỹ MB yêu cầu khách hàng dao động trong khoảng nào?","Từ 0% đến 100% giá trị cam kết, tùy mức độ tin cậy của khách hàng.",,"[#1 tr.51 tm_thong_tin_khac]
 ch hàng.
 HAN
@@ -604,7 +604,7 @@ Cho vay các TCKT, cá nhân nước ngoài | 13.654.668 | 11.032.049
 1.271.432.824 | 1.068.978.785
 Các khoản cho vay margin chứng khoản và ứng trước
 khách hàng tại MBS | 16.695.619 | 15.040.585
-1.28",,
+1.28",2,#1 (tr.51) chứa trọn mức ký quỹ 0%-100% và điều kiện tùy mức độ tin cậy của khách hàng.,2,#1 (tr.51) chứa trọn mức ký quỹ 0%-100% và điều kiện tùy mức độ tin cậy của khách hàng.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,B,"Trong phần cam kết ngoại bảng ở thuyết minh V, mức ký quỹ MB yêu cầu khách hàng dao động trong khoảng nào?","Từ 0% đến 100% giá trị cam kết, tùy mức độ tin cậy của khách hàng.",,"[#1 tr.51 tm_thong_tin_khac]
 V- CÁC THÔNG TIN KHÁC
 1. | Các cam kết ngoại bảng
@@ -652,7 +652,7 @@ Cho vay các TCKT, cá nhân nước ngoài | 13.654.668 | 11.032.049
 Các khoản cho vay margin chứng khoản và ứng trước
 khách hàng tại MBS | 16.695.619 | 15.040.585
 1.288.128.443 | 1.084.019.370
-Phân tích chất lượng nợ cho vay:",,
+Phân tích chất lượng nợ cho vay:",2,#2 (tr.51) chứa trọn evidence và điều kiện.,2,#2 (tr.51) chứa trọn evidence và điều kiện.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
 t06,C,"Trong phần cam kết ngoại bảng ở thuyết minh V, mức ký quỹ MB yêu cầu khách hàng dao động trong khoảng nào?","Từ 0% đến 100% giá trị cam kết, tùy mức độ tin cậy của khách hàng.",tm_thong_tin_khac,"[#1 tr.51 tm_thong_tin_khac]
 V- CÁC THÔNG TIN KHÁC
 1. | Các cam kết ngoại bảng
@@ -698,4 +698,4 @@ phần và kỳ hạn của các khoản tiền gửi khách hàng của MB;
 Thời gian đến hạn của các khoản tiền gửi và cho vay các TCTD và các khoản cho vay
 khách hàng được xác định dựa vào ngày đến hạn của hợp đồng quy định. Thời gian đến
 hạn thực tế có thể thay đổi do các khế ước cho vay được gia hạn. Ngoài ra, các khoản
-cho vay khách hàng được thể hiện bằng giá trị gốc không bao gồm dự phòng rủi ro;",,
+cho vay khách hàng được thể hiện bằng giá trị gốc không bao gồm dự phòng rủi ro;",2,#2 (tr.51) chứa trọn evidence; top-3 nằm trong section được lọc.,2,#2 (tr.51) chứa trọn evidence; top-3 nằm trong section được lọc.,AI đề xuất; học viên duyệt và chấp nhận 2026-11-14
